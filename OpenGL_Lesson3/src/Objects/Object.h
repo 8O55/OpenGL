@@ -18,15 +18,20 @@ public:
     CObject()
         : CBaseEntity()
     {
-        AddComponent( std::make_shared<CComponentTransform>( CComponentTransform{ *this } ) );
+        InitComponents();
     };
 
     CObject( std::initializer_list<std::shared_ptr<CComponent>> components )
         : CBaseEntity()
         , m_Components { components }
     {
-        AddComponent( std::make_shared<CComponentTransform>( CComponentTransform{ *this } ) );
+        InitComponents();
     };
+
+    virtual void InitComponents()
+    {
+        AddComponent( std::make_shared<CComponentTransform>( CComponentTransform{ *this } ) );
+    }
 
     virtual void PreUpdate() override
     {

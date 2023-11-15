@@ -4,6 +4,7 @@
 #include "../../Utility/Math/Matrix.h"
 #include "../../Utility/Primitives/PointPrimitive.h"
 #include "../Components/ComponentCameraKeyboard.h"
+#include "../Components/ComponentCameraMouse.h"
 
 class CCameraObject : public CObject
 {
@@ -18,7 +19,7 @@ public:
         , m_Fov{ 30 }
         , m_ID{ ++m_CurrentCameraID }
     {
-        AddComponent( std::make_shared<CComponentCameraKeyboard>( *this ) );
+        InitComponents();
     }
 
     CCameraObject( std::initializer_list<std::shared_ptr<CComponent>> components )
@@ -26,7 +27,7 @@ public:
         , m_Fov{ 30 }
         , m_ID{ ++m_CurrentCameraID }
     {
-        AddComponent( std::make_shared<CComponentCameraKeyboard>( *this ) );
+        InitComponents();
     }
 
     CCameraObject( const CCameraObject& ) = default;
@@ -34,6 +35,12 @@ public:
 
     CCameraObject& operator=( const CCameraObject& ) = default;
     CCameraObject& operator=( CCameraObject&& ) = default;
+
+    virtual void InitComponents() override
+    {
+        AddComponent( std::make_shared<CComponentCameraKeyboard>( *this ) );
+        AddComponent( std::make_shared<CComponentCameraMouse>( *this ) );
+    }
 
     virtual void PreUpdate() override
     {

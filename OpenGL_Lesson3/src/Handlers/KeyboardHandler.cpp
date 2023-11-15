@@ -26,26 +26,26 @@ void CKeyboardHandler::KeyDispatcher( unsigned char key, int x, int y )
     switch( key ) {
         case 'd':
         case 'D':
-            component->KeyEvent( kcD, modifiers, x, y );
+            component->KeyEvent( kkcD, modifiers, x, y );
             break;
 
         case 'a':
         case 'A':
-            component->KeyEvent( kcA, modifiers, x, y );
+            component->KeyEvent( kkcA, modifiers, x, y );
             break;
 
         case 'w':
         case 'W':
-            component->KeyEvent( kcW, modifiers, x, y );
+            component->KeyEvent( kkcW, modifiers, x, y );
             break;
 
         case 's':
         case 'S':
-            component->KeyEvent( kcS, modifiers, x, y );
+            component->KeyEvent( kkcS, modifiers, x, y );
             break;
 
         case 27:
-            component->KeyEvent( kcNONE, modifiers, x, y );
+            component->KeyEvent( kkcNONE, modifiers, x, y );
             break;
     }
 }

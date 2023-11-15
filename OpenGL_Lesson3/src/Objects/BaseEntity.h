@@ -1,4 +1,6 @@
-#pragma once
+#ifndef BASE_ENTITY
+#define BASE_ENTITY
+
 #include <string>
 
 class CBaseEntity
@@ -19,3 +21,4 @@ public:
     virtual void PostUpdate() {};
     virtual void Draw()   {};
 };
+#endif

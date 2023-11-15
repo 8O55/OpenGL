@@ -1,6 +1,8 @@
-#pragma once
-#include "../Object.h"
+#ifndef COMPONENT
+#define COMPONENT
+
 #include <memory>
+#include <vector>
 #include "../BaseEntity.h"
 
 class CComponent : public CBaseEntity
@@ -19,6 +21,9 @@ public:
 
     virtual ~CComponent() = default;
     
+    virtual void InitComponents()
+    {}
+
     virtual void PreUpdate()
     {
         for( auto& component : m_Components )
@@ -105,3 +110,4 @@ public:
             return GetParent<parentType>()->GetAddComponent<componentType>( _Args... );
     }
 };
+#endif

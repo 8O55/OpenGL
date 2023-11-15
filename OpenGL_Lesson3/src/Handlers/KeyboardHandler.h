@@ -4,16 +4,16 @@
 class CKeyboardHandler
 {
 public:
-    enum KeysCodes
+    enum KeyboardKeyCodes
     {
-        kcNONE = 0,
+        kkcNONE = 0,
 
-        kcW,
-        kcS,
-        kcD,
-        kcA,
+        kkcW,
+        kkcS,
+        kkcD,
+        kkcA,
 
-        kcSIZE,
+        kkcSIZE,
     };
 
     enum KeyModifiers

@@ -78,6 +78,9 @@
     <ClCompile Include="src\Handlers\CameraHandler.cpp">
       <Filter>Handlers</Filter>
     </ClCompile>
+    <ClCompile Include="src\Objects\Components\ComponentCameraMouse .cpp">
+      <Filter>Objects\Components</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\Handlers\DisplayHandler.h">
@@ -94,9 +97,6 @@
     </ClInclude>
     <ClInclude Include="src\Utility\TimeManager.h">
       <Filter>Utility</Filter>
-    </ClInclude>
-    <ClInclude Include="src\Objects\Components\ComponentTransform.h">
-      <Filter>Objects\Components</Filter>
     </ClInclude>
     <ClInclude Include="src\Objects\Components\Component.h">
       <Filter>Objects\Components</Filter>
@@ -154,6 +154,15 @@
     </ClInclude>
     <ClInclude Include="src\Utility\Queue.h">
       <Filter>Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Objects\Components\ComponentMouse.h">
+      <Filter>Objects\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Objects\Components\ComponentCameraMouse.h">
+      <Filter>Objects\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Objects\Components\ComponentTransform.h">
+      <Filter>Objects\Components</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

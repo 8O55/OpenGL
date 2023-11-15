@@ -6,8 +6,8 @@
 class CComponentKeyboard : public CComponent
 {
 public:
-    using KeyCode      = CKeyboardHandler::KeysCodes;
-    using KeyModifier = CKeyboardHandler::KeyModifiers;
+    using KeyCode      = CKeyboardHandler::KeyboardKeyCodes;
+    using KeyModifier  = CKeyboardHandler::KeyModifiers;
 protected:
     struct Event
     {
