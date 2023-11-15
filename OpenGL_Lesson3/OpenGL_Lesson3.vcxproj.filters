@@ -1,0 +1,159 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Исходные файлы">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Файлы заголовков">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Файлы ресурсов">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="OpenGLMain">
+      <UniqueIdentifier>{51955f20-0633-44f4-97e6-e0df567b2e70}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Handlers">
+      <UniqueIdentifier>{fd86aed9-160a-4311-a01a-e756e96e7fd4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utility">
+      <UniqueIdentifier>{75706094-0dc8-455b-859d-630d1ee023b3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Objects">
+      <UniqueIdentifier>{0b875158-57b7-4130-a221-b854233c9e85}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Objects\Components">
+      <UniqueIdentifier>{2c04f5bd-d9bc-4514-941e-a76cbe31a50a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utility\Primitives">
+      <UniqueIdentifier>{353124bf-b9fd-4850-ae31-71c3868167e4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Objects\Geometric">
+      <UniqueIdentifier>{5cd34518-e35a-4b56-b025-499e64dff820}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utility\Math">
+      <UniqueIdentifier>{5fa62344-52a2-453f-8b15-5cb5b39631e4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scenes">
+      <UniqueIdentifier>{21b37497-377c-430b-a2ae-5991c30aaf88}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scenes\Storage">
+      <UniqueIdentifier>{ae063d9a-ff2f-46c2-96d2-1c0f76470589}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Objects\Cameras">
+      <UniqueIdentifier>{bc022cff-48ee-4f65-80dd-68368f831383}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Lesson3.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Handlers\DisplayHandler.cpp">
+      <Filter>Handlers</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Handlers\KeyboardHandler.cpp">
+      <Filter>Handlers</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Handlers\MouseHandler.cpp">
+      <Filter>Handlers</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Main\OpenGLMainClass.cpp">
+      <Filter>OpenGLMain</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Utility\TimeManager.cpp">
+      <Filter>Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Objects\Geometric\CCube.cpp">
+      <Filter>Objects\Geometric</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Handlers\SceneHandler.cpp">
+      <Filter>Handlers</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Scenes\Scene.cpp">
+      <Filter>Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Handlers\CameraHandler.cpp">
+      <Filter>Handlers</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\Handlers\DisplayHandler.h">
+      <Filter>Handlers</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Handlers\KeyboardHandler.h">
+      <Filter>Handlers</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Handlers\MouseHandler.h">
+      <Filter>Handlers</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Main\OpenGLMainClass.h">
+      <Filter>OpenGLMain</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Utility\TimeManager.h">
+      <Filter>Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Objects\Components\ComponentTransform.h">
+      <Filter>Objects\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Objects\Components\Component.h">
+      <Filter>Objects\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Utility\Primitives\TrianglePrimitive.h">
+      <Filter>Utility\Primitives</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Objects\Components\ComponentMesh.h">
+      <Filter>Objects\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Utility\Primitives\PointPrimitive.h">
+      <Filter>Utility\Primitives</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Objects\Geometric\CCube.h">
+      <Filter>Objects\Geometric</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Objects\Object.h">
+      <Filter>Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Utility\Math\Matrix.h">
+      <Filter>Utility\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Utility\Math\Vector.h">
+      <Filter>Utility\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Utility\Utils.h">
+      <Filter>Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Handlers\SceneHandler.h">
+      <Filter>Handlers</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Scenes\Scene.h">
+      <Filter>Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Objects\Components\ComponentSpotlight.h">
+      <Filter>Objects\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Objects\Components\ComponentLight.h">
+      <Filter>Objects\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Objects\BaseEntity.h">
+      <Filter>Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Objects\Cameras\CameraObject.h">
+      <Filter>Objects\Cameras</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Handlers\CameraHandler.h">
+      <Filter>Handlers</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Objects\Components\ComponentKeyboard.h">
+      <Filter>Objects\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Objects\Components\ComponentCameraKeyboard.h">
+      <Filter>Objects\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Utility\Queue.h">
+      <Filter>Utility</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

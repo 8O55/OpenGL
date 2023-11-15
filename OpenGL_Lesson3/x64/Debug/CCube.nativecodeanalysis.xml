@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DEFECTS>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\SAYONARA\Documents\OpenGL\OpenGL_Lessons\OpenGL_Lesson3\src\Utility\</FILEPATH>
+      <FILENAME>Utils.h</FILENAME>
+      <LINE>43</LINE>
+      <COLUMN>8</COLUMN>
+    </SFA>
+    <DEFECTCODE>26439</DEFECTCODE>
+    <DESCRIPTION>Эта функция не может выдавать исключения (throw). Объявите ее как "noexcept" (f.6).</DESCRIPTION>
+    <FUNCTION>CColor::CRGB::{ctor}</FUNCTION>
+    <DECORATED>??0CRGB@CColor@@QEAA@$$QEAU01@@Z</DECORATED>
+    <FUNCLINE>43</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\SAYONARA\Documents\OpenGL\OpenGL_Lessons\OpenGL_Lesson3\src\Utility\</FILEPATH>
+      <FILENAME>Utils.h</FILENAME>
+      <LINE>61</LINE>
+      <COLUMN>13</COLUMN>
+    </SFA>
+    <DEFECTCODE>26439</DEFECTCODE>
+    <DESCRIPTION>Эта функция не может выдавать исключения (throw). Объявите ее как "noexcept" (f.6).</DESCRIPTION>
+    <FUNCTION>CColor::CRGB::=</FUNCTION>
+    <DECORATED>??4CRGB@CColor@@QEAA?AU01@$$QEAU01@@Z</DECORATED>
+    <FUNCLINE>61</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\SAYONARA\Documents\OpenGL\OpenGL_Lessons\OpenGL_Lesson3\src\Utility\</FILEPATH>
+      <FILENAME>Utils.h</FILENAME>
+      <LINE>124</LINE>
+      <COLUMN>8</COLUMN>
+    </SFA>
+    <DEFECTCODE>26439</DEFECTCODE>
+    <DESCRIPTION>Эта функция не может выдавать исключения (throw). Объявите ее как "noexcept" (f.6).</DESCRIPTION>
+    <FUNCTION>CColor::CHSV::{ctor}</FUNCTION>
+    <DECORATED>??0CHSV@CColor@@QEAA@$$QEAU01@@Z</DECORATED>
+    <FUNCLINE>124</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\SAYONARA\Documents\OpenGL\OpenGL_Lessons\OpenGL_Lesson3\src\Utility\</FILEPATH>
+      <FILENAME>Utils.h</FILENAME>
+      <LINE>142</LINE>
+      <COLUMN>13</COLUMN>
+    </SFA>
+    <DEFECTCODE>26439</DEFECTCODE>
+    <DESCRIPTION>Эта функция не может выдавать исключения (throw). Объявите ее как "noexcept" (f.6).</DESCRIPTION>
+    <FUNCTION>CColor::CHSV::=</FUNCTION>
+    <DECORATED>??4CHSV@CColor@@QEAA?AU01@$$QEAU01@@Z</DECORATED>
+    <FUNCLINE>142</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\SAYONARA\Documents\OpenGL\OpenGL_Lessons\OpenGL_Lesson3\src\Utility\</FILEPATH>
+      <FILENAME>Utils.h</FILENAME>
+      <LINE>239</LINE>
+      <COLUMN>4</COLUMN>
+    </SFA>
+    <DEFECTCODE>26439</DEFECTCODE>
+    <DESCRIPTION>Эта функция не может выдавать исключения (throw). Объявите ее как "noexcept" (f.6).</DESCRIPTION>
+    <FUNCTION>CColor::{ctor}</FUNCTION>
+    <DECORATED>??0CColor@@QEAA@$$QEAV0@@Z</DECORATED>
+    <FUNCLINE>239</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\SAYONARA\Documents\OpenGL\OpenGL_Lessons\OpenGL_Lesson3\src\Utility\</FILEPATH>
+      <FILENAME>Utils.h</FILENAME>
+      <LINE>263</LINE>
+      <COLUMN>11</COLUMN>
+    </SFA>
+    <DEFECTCODE>26439</DEFECTCODE>
+    <DESCRIPTION>Эта функция не может выдавать исключения (throw). Объявите ее как "noexcept" (f.6).</DESCRIPTION>
+    <FUNCTION>CColor::=</FUNCTION>
+    <DECORATED>??4CColor@@QEAA?AV0@$$QEAV0@@Z</DECORATED>
+    <FUNCLINE>263</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\SAYONARA\Documents\OpenGL\OpenGL_Lessons\OpenGL_Lesson3\src\Utility\</FILEPATH>
+      <FILENAME>Utils.h</FILENAME>
+      <LINE>294</LINE>
+      <COLUMN>4</COLUMN>
+    </SFA>
+    <DEFECTCODE>26439</DEFECTCODE>
+    <DESCRIPTION>Эта функция не может выдавать исключения (throw). Объявите ее как "noexcept" (f.6).</DESCRIPTION>
+    <FUNCTION>CDrawableObject::{ctor}</FUNCTION>
+    <DECORATED>??0CDrawableObject@@QEAA@$$QEAV0@@Z</DECORATED>
+    <FUNCLINE>294</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\SAYONARA\Documents\OpenGL\OpenGL_Lessons\OpenGL_Lesson3\src\Utility\</FILEPATH>
+      <FILENAME>Utils.h</FILENAME>
+      <LINE>315</LINE>
+      <COLUMN>9</COLUMN>
+    </SFA>
+    <DEFECTCODE>26439</DEFECTCODE>
+    <DESCRIPTION>Эта функция не может выдавать исключения (throw). Объявите ее как "noexcept" (f.6).</DESCRIPTION>
+    <FUNCTION>CDrawableObject::=</FUNCTION>
+    <DECORATED>??4CDrawableObject@@QEAAX$$QEAV0@@Z</DECORATED>
+    <FUNCLINE>315</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\SAYONARA\Documents\OpenGL\OpenGL_Lessons\OpenGL_Lesson3\src\Utility\Primitives\</FILEPATH>
+      <FILENAME>PointPrimitive.h</FILENAME>
+      <LINE>202</LINE>
+      <COLUMN>4</COLUMN>
+    </SFA>
+    <DEFECTCODE>26439</DEFECTCODE>
+    <DESCRIPTION>Эта функция не может выдавать исключения (throw). Объявите ее как "noexcept" (f.6).</DESCRIPTION>
+    <FUNCTION>CPoint3D&lt;float&gt;::{ctor}</FUNCTION>
+    <DECORATED>??0?$CPoint3D@M@@QEAA@$$QEAV0@@Z</DECORATED>
+    <FUNCLINE>202</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\SAYONARA\Documents\OpenGL\OpenGL_Lessons\OpenGL_Lesson3\src\Utility\Math\</FILEPATH>
+      <FILENAME>Vector.h</FILENAME>
+      <LINE>135</LINE>
+      <COLUMN>12</COLUMN>
+    </SFA>
+    <DEFECTCODE>26439</DEFECTCODE>
+    <DESCRIPTION>Эта функция не может выдавать исключения (throw). Объявите ее как "noexcept" (f.6).</DESCRIPTION>
+    <FUNCTION>CVector&lt;float&gt;::{ctor}</FUNCTION>
+    <DECORATED>??0?$CVector@M@@QEAA@$$QEAV0@@Z</DECORATED>
+    <FUNCLINE>135</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+</DEFECTS>

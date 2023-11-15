@@ -1,0 +1,43 @@
+{
+  "version": "2.1.0",
+  "$schema": "https://schemastore.azurewebsites.net/schemas/json/sarif-2.1.0-rtm.5.json",
+  "runs": [
+    {
+      "results": [],
+      "tool": {
+        "driver": {
+          "name": "PREfast",
+          "fullName": "PREfast Code Analysis",
+          "version": "14.35.32215.0",
+          "informationUri": "https://aka.ms/cpp/ca"
+        }
+      },
+      "invocations": [
+        {
+          "executionSuccessful": true
+        }
+      ],
+      "artifacts": [
+        {
+          "location": {
+            "uri": "file:///c:/users/sayonara/documents/opengl/opengl_lessons/opengl_lesson3/src/utility/timemanager.cpp"
+          },
+          "roles": [
+            "analysisTarget"
+          ],
+          "hashes": {
+            "sha-256": "42cdb9788e34902b1285bdcf999c44ab6f4a203cedd7ac0ba36afba37ad9ace4"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/sayonara/documents/opengl/opengl_lessons/opengl_lesson3/src/utility/timemanager.h"
+          },
+          "hashes": {
+            "sha-256": "5b4711f4b67d4750b6f3457237dee7a4a0238edf555a39de1dccebba9c3f10ef"
+          }
+        }
+      ]
+    }
+  ]
+}

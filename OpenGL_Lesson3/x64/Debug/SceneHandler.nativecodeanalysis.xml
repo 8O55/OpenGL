@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DEFECTS>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\SAYONARA\Documents\OpenGL\OpenGL_Lessons\OpenGL_Lesson3\src\Handlers\</FILEPATH>
+      <FILENAME>SceneHandler.cpp</FILENAME>
+      <LINE>3</LINE>
+      <COLUMN>15</COLUMN>
+    </SFA>
+    <DEFECTCODE>26495</DEFECTCODE>
+    <DESCRIPTION>Переменная "CSceneHandler::m_currentScene" не инициализирована. Всегда инициализируйте переменную-член (type.6).</DESCRIPTION>
+    <FUNCTION>CSceneHandler::{ctor}</FUNCTION>
+    <DECORATED>??0CSceneHandler@@QEAA@XZ</DECORATED>
+    <FUNCLINE>3</FUNCLINE>
+    <ADDITIONALINFO>
+      <targetSymbol>CSceneHandler::m_currentScene</targetSymbol>
+    </ADDITIONALINFO>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\SAYONARA\Documents\OpenGL\OpenGL_Lessons\OpenGL_Lesson3\src\Utility\Math\</FILEPATH>
+      <FILENAME>Vector.h</FILENAME>
+      <LINE>135</LINE>
+      <COLUMN>12</COLUMN>
+    </SFA>
+    <DEFECTCODE>26439</DEFECTCODE>
+    <DESCRIPTION>Эта функция не может выдавать исключения (throw). Объявите ее как "noexcept" (f.6).</DESCRIPTION>
+    <FUNCTION>CVector&lt;float&gt;::{ctor}</FUNCTION>
+    <DECORATED>??0?$CVector@M@@QEAA@$$QEAV0@@Z</DECORATED>
+    <FUNCLINE>135</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+</DEFECTS>
