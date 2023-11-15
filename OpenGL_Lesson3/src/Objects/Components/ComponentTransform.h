@@ -1,9 +1,11 @@
-#pragma once
+#ifndef COMPONENT_TRANSFORM
+#define COMPONENT_TRANSFORM
 #include "Component.h"
 #include "../../Utility/Math/Matrix.h"
 #include "../../Utility/Math/Vector.h"
 
-#include "../BaseEntity.h"
+class CComponent;
+class CBaseEntity;
 
 class CComponentTransform : public CComponent
 {
@@ -50,3 +52,4 @@ public:
         CComponent::PreUpdate();
     };
 };
+#endif

@@ -5,9 +5,6 @@
 class CComponentCameraKeyboard : public CComponentKeyboard
 {
 public:
-    using KeyCode = CKeyboardHandler::KeysCodes;
-
-public:
     CComponentCameraKeyboard( CBaseEntity& parent )
         : CComponentKeyboard{ parent }
     {
@@ -27,28 +24,28 @@ public:
             transform = GetAddParentComponent<CComponentTransform, CComponent>( m_Parent );
 
         switch( event.key ) {
-            case KeyCode::kcA:
+            case KeyCode::kkcA:
                 if( event.modifier & KeyModifier::kmSHIFT )
                     transform->m_Rot[1]  += 10.0;
                 else
                     transform->m_Move[0] -= 10.0;
                 transform->Update();
                 break;
-            case KeyCode::kcD:
+            case KeyCode::kkcD:
                 if( event.modifier & KeyModifier::kmSHIFT )
                     transform->m_Rot[1]  -= 10.0;
                 else
                     transform->m_Move[0] += 10.0;
                 transform->Update();
                 break;
-            case KeyCode::kcW:
+            case KeyCode::kkcW:
                 if( event.modifier & KeyModifier::kmSHIFT )
                     transform->m_Rot[0]  += 10.0;
                 else
                     transform->m_Move[2] -= 10.0;
                 transform->Update();
                 break;
-            case KeyCode::kcS:
+            case KeyCode::kkcS:
                 if( event.modifier & KeyModifier::kmSHIFT )
                     transform->m_Rot[0]  -= 10.0;
                 else
