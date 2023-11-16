@@ -4,6 +4,7 @@
 #include "../Objects/Components/ComponentMouse.h"
 
 CMouseHandler::CMouseHandler()
+    : m_MouseHold{ false }
 {
     InitMaps();
 }
@@ -27,6 +28,17 @@ void CMouseHandler::MakeMouseEvent( MouseKeyCodes key, MouseKeyStates state, int
         return;
     
     component->KeyEvent( key, state, modifier, x, y );
+
+    static int prevX = x;
+    static int prevY = y;
+
+    if( m_MouseHold ) {
+        glutWarpPointer( x, y );
+    }
+    else {
+        prevX = x;
+        prevY = y;
+    }
 }
 
 void CMouseHandler::PassiveMouseFunc( int x, int y )
@@ -98,4 +110,14 @@ void CMouseHandler::SetCoursorType( CoursorType coursor )
         glutSetCursor( m_CursorTypeConvertationMap[coursor] );
     else 
         glutSetCursor( GLUT_CURSOR_NONE );
+}
+
+void CMouseHandler::SetMouseHold( bool state )
+{
+    m_MouseHold = state;
+}
+
+void CMouseHandler::WarpCursor( int x, int y )
+{
+    glutWarpPointer( x, y );
 }

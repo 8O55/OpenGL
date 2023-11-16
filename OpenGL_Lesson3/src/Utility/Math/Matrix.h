@@ -527,8 +527,19 @@ void CMatrix<T>::Print()
 template<typename T>
 inline CMatrix<T> CMatrix<T>::GetRotMatrix( CVector<T> rot )
 {
+
     rot *= M_PI / 180;
 
+    float s1 = sin( rot[0]);
+    float c1 = cos( rot[0] );
+
+    float s2 = sin( rot[1] );
+    float c2 = cos( rot[1] );
+
+    float s3 = sin( rot[2] );
+    float c3 = cos( rot[2] );
+
+    /*
     CMatrix<T> rotX{ { 1,              0,               0 },
                      { 0, cosf( rot[0] ), -sinf( rot[0] ) },
                      { 0, sinf( rot[0] ),  cosf( rot[0] ) } };
@@ -541,7 +552,8 @@ inline CMatrix<T> CMatrix<T>::GetRotMatrix( CVector<T> rot )
                      { sinf( rot[2] ),  cosf( rot[2] ), 0 },
                      {              0,               0, 1 } };
 
-    return rotX * rotY * rotZ;
+    */
+    return rotZ * rotY * rotX;
 }
 
 #endif // CMATRIX_H

@@ -1,5 +1,6 @@
 #pragma once
 #include "../Objects/Object.h"
+#include "../Utility/Math/Vector.h"
 #include <vector>
 
 class CScene
@@ -20,6 +21,7 @@ public:
 
     size_t FindObjectID( std::shared_ptr<CObject> object );
     void AddObject( std::shared_ptr<CObject> object );
+    void AddObject( std::shared_ptr<CObject> object, CVector<float> pos, CVector<float> rot );
     void RemoveObject( std::shared_ptr<CObject> object );
 
     std::shared_ptr<CObject> GetObjectByID( size_t objectID );

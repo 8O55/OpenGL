@@ -112,6 +112,8 @@ public:
     CVector<T> operator=( const CVector<T>& vec2 );  //!< Оператор копирования
     CVector<T> operator=( CVector<T>&& vec2 );       //!< Оператор перемещения
 
+    bool operator==( const CVector<T>& vec2 );
+
     void Print() {
         for( auto elem : m_Vector )
             std::cout << elem << " ";
@@ -507,5 +509,19 @@ CVector<T> CVector<T>::operator=( CVector<T>&& vec2 )
 
     return *this;
 }
+
+template<typename T>
+bool CVector<T>::operator==( const CVector<T>& vec2 )
+{
+    if( Size() != vec2.Size() )
+        return false;
+
+    for( size_t i = 0; i < vec2.Size(); i++ )
+        if( operator[](i) != vec2[i] )
+            return false;
+
+    return true;
+}
+
 #endif // CVECTOR_H
 

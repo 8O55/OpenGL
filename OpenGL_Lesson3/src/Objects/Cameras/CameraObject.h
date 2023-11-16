@@ -68,9 +68,13 @@ public:
             float cy = y + transform->m_Direction[1];
             float cz = z + transform->m_Direction[2];
 
+            float ux = transform->m_Up[0];
+            float uy = transform->m_Up[1];
+            float uz = transform->m_Up[2];
+
             //gluLookAt( x, y, z, cx, cy, cz, 0, 1, 0 );
 
-            gluLookAt( x, y, z, cx, cy, cz, 0, 1, 0 );
+            gluLookAt( x, y, z, cx, cy, cz, ux, uy, uz );
         }
     }
 };

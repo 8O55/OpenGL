@@ -83,20 +83,17 @@ public:
         CComponent::Update();
 
         m_CurTriangles = m_Triangles;
-        std::shared_ptr<CComponentTransform> ptr;
+        std::shared_ptr<CComponentTransform> transform;
 
-        //CComponent* obj = dynamic_cast< CComponent* >( m_Parent );
+        if( !transform )
+            transform = GetAddParentComponent<CComponentTransform, CObject>( m_Parent );
+        
+        if( !transform )
+            transform = GetAddParentComponent<CComponentTransform, CComponent>( m_Parent );
 
-
-        if( dynamic_cast< CObject* >( &m_Parent ) != NULL )
-            ptr = dynamic_cast< CObject* >( &m_Parent )->GetComponent<CComponentTransform>();
-
-        if( dynamic_cast< CComponent* >( &m_Parent ) != NULL )
-            ptr = dynamic_cast< CComponent* >( &m_Parent )->GetComponent<CComponentTransform>();
-
-        if( ptr ) {
+        if( transform ) {
             for( CTriangle3D<T>& triangle : m_CurTriangles )
-                triangle.RotMovScale( ptr->m_Rot, ptr->m_Move, ptr->m_Scale );
+                triangle.RotMovScale( transform->m_Rot, transform->m_Position, transform->m_Scale );
         }
     };
 

@@ -7,12 +7,17 @@ void CComponentCameraMouse::MouseMove( int deltaX, int deltaY )
 {
     if( m_CurTransform.expired() || !IsKeyActive( KeyCode::mkcLEFT ) ) {
         COpenGLMainClass::m_MouseHandler.SetCoursorType( CoursorType::ctLEFT_ARROW );
+        //COpenGLMainClass::m_MouseHandler.SetMouseHold( false );
         return;
     }
 
-    m_CurTransform.lock()->m_Rot += CVector<float>{ static_cast< float >( -deltaY )* m_Sensivity, static_cast< float >( deltaX )* m_Sensivity, 0 };
-
+    CVector<float>& rot = m_CurTransform.lock()->m_Rot;
+    rot += CVector<float>{ static_cast<float>(deltaY)* m_Sensivity, static_cast<float>(deltaX)* m_Sensivity, 0 };
     COpenGLMainClass::m_MouseHandler.SetCoursorType( CoursorType::ctNONE );
+    //COpenGLMainClass::m_MouseHandler.SetMouseHold( true );
+    //COpenGLMainClass::m_MouseHandler.WarpCursor( m_PrevX, m_PrevY );
+    //m_CurrX = m_PrevX;
+    //m_CurrY = m_PrevY;
 }
 
 void CComponentCameraMouse::ProcessKeyEvent( Event& event )

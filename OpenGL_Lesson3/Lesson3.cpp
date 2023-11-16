@@ -6,7 +6,7 @@ COpenGLMainClass* oglMainPtr;
 void update( int )
 {
     oglMainPtr->Update();
-    glutTimerFunc( 25, update, 1 );
+    glutTimerFunc( 1, update, 1 );
 }
 
 int main( int argc, char** argv )

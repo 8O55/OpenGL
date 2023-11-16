@@ -6,7 +6,7 @@ class CMouseHandler
 {
 #define GLUT_WHEEL_UP   3
 #define GLUT_WHEEL_DOWN 4
-
+    bool m_MouseHold;
 public:
     enum MouseKeyCodes
     {
@@ -85,5 +85,7 @@ public:
     void MouseFunc( int button, int state, int x, int y );
 
     void SetCoursorType( CoursorType type );
+    void SetMouseHold( bool state = false );
+    void WarpCursor( int x, int y );
 };
 
