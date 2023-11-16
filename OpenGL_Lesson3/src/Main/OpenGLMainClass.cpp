@@ -75,28 +75,35 @@ void COpenGLMainClass::Start()
 
 void COpenGLMainClass::Update()
 {
-    if( !m_TimeManager.IsTimerEnded() )
-        return;
+    //if( !m_TimeManager.IsTimerEnded() )
+    //    return;
 
     m_SceneHandler.PreUpdate();
     m_CameraHandler.PreUpdate();
     m_SceneHandler.Update();
     m_CameraHandler.Update();
     glutPostRedisplay();
-    m_TimeManager.StartTimer( 1000.0 / m_FramesLimit );
+    //m_TimeManager.StartTimer( 1000.0 / m_FramesLimit );
 }
 
 void COpenGLMainClass::CreateScene()
 {
     std::shared_ptr<CScene> scene1{ std::make_shared<CScene>() };
 
-    scene1->AddObject( std::make_shared<CCube>( 200 ) );
+    scene1->AddObject( std::make_shared<CCube>( 200 ), CVector<float>{ +600, 0, 0 }, CVector<float>{ 0, 0, 0 } );
+    scene1->AddObject( std::make_shared<CCube>( 200 ), CVector<float>{ -600, 0, 0 }, CVector<float>{ 0, 0, 0 } );
+    scene1->AddObject( std::make_shared<CCube>( 200 ), CVector<float>{ 0, +600, 0 }, CVector<float>{ 0, 0, 0 } );
+    scene1->AddObject( std::make_shared<CCube>( 200 ), CVector<float>{ 0, -600, 0 }, CVector<float>{ 0, 0, 0 } );
+    scene1->AddObject( std::make_shared<CCube>( 200 ), CVector<float>{ 0, 0, +600 }, CVector<float>{ 0, 0, 0 } );
+    scene1->AddObject( std::make_shared<CCube>( 200 ), CVector<float>{ 0, 0, -600 }, CVector<float>{ 0, 0, 0 } );
+
     //scene1->GetObjectByID( 0 )->AddComponent( std::make_shared<CComponentMesh3D<float>>( *(scene1->GetObjectByID( 0 ).get()) ) );
-    scene1->GetObjectByID( 0 )->GetComponent<CComponentLight>()->SetLightPositionObject( std::make_shared<CCube>( 50 ) );
+    //scene1->GetObjectByID( 0 )->GetComponent<CComponentLight>()->SetLightPositionObject( std::make_shared<CCube>( 50 ) );
     //scene1->GetObjectByID( 0 )->GetComponent<CComponentLight>()->m_LightPositionObject->AddComponent( std::make_shared<CComponentMesh3D<float>>( *(scene1->GetObjectByID( 0 )->GetComponent<CComponentLight>()->m_LightPositionObject.get()) ) );
-    scene1->GetObjectByID( 0 )->GetComponent<CComponentLight>()->ShowLightPosition( true );
+    //scene1->GetObjectByID( 0 )->GetComponent<CComponentLight>()->ShowLightPosition( true );
     //std::dynamic_pointer_cast<CCube>( scene1->GetObjectByID( 0 )->GetComponent<CComponentLight>()->m_LightPositionObject )->MakeMesh();
     //std::dynamic_pointer_cast< CCube >( scene1->GetObjectByID( 0 ) )->MakeMesh();
+    
     std::shared_ptr<CCameraObject> camera1( std::make_shared<CCameraObject>() );
 
 

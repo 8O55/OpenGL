@@ -30,7 +30,15 @@ void CScene::Draw()
 
 void CScene::AddObject( std::shared_ptr<CObject> object )
 {
-    m_Objects.push_back( std::dynamic_pointer_cast<CObject>( object ) );
+    m_Objects.push_back( object );
+}
+
+void CScene::AddObject( std::shared_ptr<CObject> object, CVector<float> pos, CVector<float> rot )
+{
+    m_Objects.push_back( object );
+    std::shared_ptr<CComponentTransform> transform = object->GetAddComponent<CComponentTransform>( *object.get() );
+    transform->m_Position = pos;
+    transform->m_Rot = rot;
 }
 
 size_t CScene::FindObjectID( std::shared_ptr<CObject> component )

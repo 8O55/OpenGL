@@ -25,7 +25,7 @@ public:
         , m_PrevY{ 0 }
         , m_ActiveKeysMsk{ 0 }
         , m_ActiveModifiersMsk{ 0 }
-        , m_Sensivity{ 0.2f }
+        , m_Sensivity{ 0.5f }
     {     
     };
 
