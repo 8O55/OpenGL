@@ -46,6 +46,9 @@
     <Filter Include="Objects\Cameras">
       <UniqueIdentifier>{bc022cff-48ee-4f65-80dd-68368f831383}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Objects\Lights">
+      <UniqueIdentifier>{5b22fe42-04ad-4b26-8bfa-649d73de9a93}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Lesson3.cpp">
@@ -79,6 +82,12 @@
       <Filter>Handlers</Filter>
     </ClCompile>
     <ClCompile Include="src\Objects\Components\ComponentCameraMouse .cpp">
+      <Filter>Objects\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Objects\Lights\BaseLight.cpp">
+      <Filter>Objects\Lights</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Objects\Components\ComponentTransform.cpp">
       <Filter>Objects\Components</Filter>
     </ClCompile>
   </ItemGroup>
@@ -163,6 +172,9 @@
     </ClInclude>
     <ClInclude Include="src\Objects\Components\ComponentTransform.h">
       <Filter>Objects\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Objects\Lights\BaseLight.h">
+      <Filter>Objects\Lights</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

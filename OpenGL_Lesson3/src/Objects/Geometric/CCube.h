@@ -8,20 +8,20 @@ public:
     CCube( float a );
     virtual ~CCube() = default;
 
-    CCube( const CCube& ) = default;
-    CCube( CCube&& ) = default;
+    CCube( const CCube& ) = delete;
+    CCube( CCube&& ) = delete;
 
-    CCube& operator=( const CCube& ) = default;
-    CCube& operator=( CCube&& ) = default;
+    CCube& operator=( const CCube& ) = delete;
+    CCube& operator=( CCube&& ) = delete;
 
     virtual void Update() override
     {
-        //CObject::Update();
-        m_Components[2]->Update();
-        m_Components[1]->Update();
+        CObject::Update();
     }
 
     void MakeMesh();
+
+    virtual void InitComponents() override;
 };
 
 

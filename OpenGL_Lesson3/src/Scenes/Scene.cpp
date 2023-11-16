@@ -22,6 +22,12 @@ void CScene::Update()
         object->Update();
 }
 
+void CScene::PostUpdate()
+{
+    for( const auto& object : m_Objects )
+        object->PostUpdate();
+}
+
 void CScene::Draw()
 {
     for( const auto& object : m_Objects )

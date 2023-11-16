@@ -1,312 +1,361 @@
 ﻿  Lesson3.cpp
-C:\Users\kii2\Documents\OpenGL\OpenGL\OpenGL_Lesson3\src\Objects\Components\ComponentTransform.h(55,24): warning C4244: =: преобразование "double" в "T", возможна потеря данных
+C:\Users\SAYONARA\Documents\OpenGL\OpenGL_Lessons\OpenGL_Lesson3\src\Objects\Components\ComponentTransform.h(63,24): warning C4244: =: преобразование "double" в "T", возможна потеря данных
           with
           [
               T=float
           ]
-C:\Users\kii2\Documents\OpenGL\OpenGL\OpenGL_Lesson3\src\Objects\Components\ComponentTransform.h(56,24): warning C4244: =: преобразование "double" в "T", возможна потеря данных
+C:\Users\SAYONARA\Documents\OpenGL\OpenGL_Lessons\OpenGL_Lesson3\src\Objects\Components\ComponentTransform.h(64,24): warning C4244: =: преобразование "double" в "T", возможна потеря данных
           with
           [
               T=float
           ]
-C:\Users\kii2\Documents\OpenGL\OpenGL\OpenGL_Lesson3\src\Objects\Components\ComponentTransform.h(57,24): warning C4244: =: преобразование "double" в "T", возможна потеря данных
+C:\Users\SAYONARA\Documents\OpenGL\OpenGL_Lessons\OpenGL_Lesson3\src\Objects\Components\ComponentTransform.h(65,24): warning C4244: =: преобразование "double" в "T", возможна потеря данных
           with
           [
               T=float
           ]
-C:\Users\kii2\Documents\OpenGL\OpenGL\OpenGL_Lesson3\src\Utility\Math\Vector.h(347,20): warning C4244: инициализация: преобразование "double" в "size_t", возможна потеря данных
-C:\Users\kii2\Documents\OpenGL\OpenGL\OpenGL_Lesson3\src\Utility\Math\Vector.h(345,1): message : во время компиляции функции-члена класс шаблон "CVector<float> CVector<float>::operator +=(CVector<float>)"
-C:\Users\kii2\Documents\OpenGL\OpenGL\OpenGL_Lesson3\src\Objects\Components\ComponentTransform.h(75,20): message : выполняется компиляция ссылки на экземпляр шаблон функции "CVector<float> CVector<float>::operator +=(CVector<float>)"
-C:\Users\kii2\Documents\OpenGL\OpenGL\OpenGL_Lesson3\src\Objects\Components\ComponentTransform.h(13,20): message : выполняется компиляция ссылки на экземпляр класс шаблон функции "CVector<float>"
-C:\Users\kii2\Documents\OpenGL\OpenGL\OpenGL_Lesson3\src\Utility\Math\Matrix.h(530,1): warning C4305: аргумент: усечение из "double" в "T"
+C:\Users\SAYONARA\Documents\OpenGL\OpenGL_Lessons\OpenGL_Lesson3\src\Utility\Math\Vector.h(347,20): warning C4244: инициализация: преобразование "double" в "size_t", возможна потеря данных
+C:\Users\SAYONARA\Documents\OpenGL\OpenGL_Lessons\OpenGL_Lesson3\src\Utility\Math\Vector.h(345,1): message : во время компиляции функции-члена класс шаблон "CVector<float> CVector<float>::operator +=(CVector<float>)"
+C:\Users\SAYONARA\Documents\OpenGL\OpenGL_Lessons\OpenGL_Lesson3\src\Objects\Components\ComponentTransform.h(84,20): message : выполняется компиляция ссылки на экземпляр шаблон функции "CVector<float> CVector<float>::operator +=(CVector<float>)"
+C:\Users\SAYONARA\Documents\OpenGL\OpenGL_Lessons\OpenGL_Lesson3\src\Objects\Components\ComponentTransform.h(14,20): message : выполняется компиляция ссылки на экземпляр класс шаблон функции "CVector<float>"
+C:\Users\SAYONARA\Documents\OpenGL\OpenGL_Lessons\OpenGL_Lesson3\src\Utility\Math\Matrix.h(530,1): warning C4305: аргумент: усечение из "double" в "T"
           with
           [
               T=float
           ]
-C:\Users\kii2\Documents\OpenGL\OpenGL\OpenGL_Lesson3\src\Utility\Math\Matrix.h(529,1): message : во время компиляции функции-члена класс шаблон "CMatrix<float> CMatrix<float>::GetRotMatrix(CVector<float>)"
-C:\Users\kii2\Documents\OpenGL\OpenGL\OpenGL_Lesson3\src\Objects\Components\ComponentTransform.h(64,24): message : выполняется компиляция ссылки на экземпляр шаблон функции "CMatrix<float> CMatrix<float>::GetRotMatrix(CVector<float>)"
-C:\Users\kii2\Documents\OpenGL\OpenGL\OpenGL_Lesson3\src\Objects\Components\ComponentTransform.h(59,1): message : выполняется компиляция ссылки на экземпляр класс шаблон функции "CMatrix<float>"
+C:\Users\SAYONARA\Documents\OpenGL\OpenGL_Lessons\OpenGL_Lesson3\src\Utility\Math\Matrix.h(528,1): message : во время компиляции функции-члена класс шаблон "CMatrix<float> CMatrix<float>::GetRotMatrix(CVector<float>)"
+C:\Users\SAYONARA\Documents\OpenGL\OpenGL_Lessons\OpenGL_Lesson3\src\Objects\Components\ComponentTransform.h(72,24): message : выполняется компиляция ссылки на экземпляр шаблон функции "CMatrix<float> CMatrix<float>::GetRotMatrix(CVector<float>)"
+C:\Users\SAYONARA\Documents\OpenGL\OpenGL_Lessons\OpenGL_Lesson3\src\Objects\Components\ComponentTransform.h(67,1): message : выполняется компиляция ссылки на экземпляр класс шаблон функции "CMatrix<float>"
   CameraHandler.cpp
-C:\Users\kii2\Documents\OpenGL\OpenGL\OpenGL_Lesson3\src\Objects\Components\ComponentTransform.h(55,24): warning C4244: =: преобразование "double" в "T", возможна потеря данных
+C:\Users\SAYONARA\Documents\OpenGL\OpenGL_Lessons\OpenGL_Lesson3\src\Objects\Components\ComponentTransform.h(63,24): warning C4244: =: преобразование "double" в "T", возможна потеря данных
           with
           [
               T=float
           ]
-C:\Users\kii2\Documents\OpenGL\OpenGL\OpenGL_Lesson3\src\Objects\Components\ComponentTransform.h(56,24): warning C4244: =: преобразование "double" в "T", возможна потеря данных
+C:\Users\SAYONARA\Documents\OpenGL\OpenGL_Lessons\OpenGL_Lesson3\src\Objects\Components\ComponentTransform.h(64,24): warning C4244: =: преобразование "double" в "T", возможна потеря данных
           with
           [
               T=float
           ]
-C:\Users\kii2\Documents\OpenGL\OpenGL\OpenGL_Lesson3\src\Objects\Components\ComponentTransform.h(57,24): warning C4244: =: преобразование "double" в "T", возможна потеря данных
+C:\Users\SAYONARA\Documents\OpenGL\OpenGL_Lessons\OpenGL_Lesson3\src\Objects\Components\ComponentTransform.h(65,24): warning C4244: =: преобразование "double" в "T", возможна потеря данных
           with
           [
               T=float
           ]
-C:\Users\kii2\Documents\OpenGL\OpenGL\OpenGL_Lesson3\src\Utility\Math\Vector.h(347,20): warning C4244: инициализация: преобразование "double" в "size_t", возможна потеря данных
-C:\Users\kii2\Documents\OpenGL\OpenGL\OpenGL_Lesson3\src\Utility\Math\Vector.h(345,1): message : во время компиляции функции-члена класс шаблон "CVector<float> CVector<float>::operator +=(CVector<float>)"
-C:\Users\kii2\Documents\OpenGL\OpenGL\OpenGL_Lesson3\src\Objects\Components\ComponentTransform.h(75,20): message : выполняется компиляция ссылки на экземпляр шаблон функции "CVector<float> CVector<float>::operator +=(CVector<float>)"
-C:\Users\kii2\Documents\OpenGL\OpenGL\OpenGL_Lesson3\src\Objects\Components\ComponentTransform.h(13,20): message : выполняется компиляция ссылки на экземпляр класс шаблон функции "CVector<float>"
-C:\Users\kii2\Documents\OpenGL\OpenGL\OpenGL_Lesson3\src\Utility\Math\Matrix.h(530,1): warning C4305: аргумент: усечение из "double" в "T"
+C:\Users\SAYONARA\Documents\OpenGL\OpenGL_Lessons\OpenGL_Lesson3\src\Utility\Math\Vector.h(347,20): warning C4244: инициализация: преобразование "double" в "size_t", возможна потеря данных
+C:\Users\SAYONARA\Documents\OpenGL\OpenGL_Lessons\OpenGL_Lesson3\src\Utility\Math\Vector.h(345,1): message : во время компиляции функции-члена класс шаблон "CVector<float> CVector<float>::operator +=(CVector<float>)"
+C:\Users\SAYONARA\Documents\OpenGL\OpenGL_Lessons\OpenGL_Lesson3\src\Objects\Components\ComponentTransform.h(84,20): message : выполняется компиляция ссылки на экземпляр шаблон функции "CVector<float> CVector<float>::operator +=(CVector<float>)"
+C:\Users\SAYONARA\Documents\OpenGL\OpenGL_Lessons\OpenGL_Lesson3\src\Objects\Components\ComponentTransform.h(14,20): message : выполняется компиляция ссылки на экземпляр класс шаблон функции "CVector<float>"
+C:\Users\SAYONARA\Documents\OpenGL\OpenGL_Lessons\OpenGL_Lesson3\src\Utility\Math\Matrix.h(530,1): warning C4305: аргумент: усечение из "double" в "T"
           with
           [
               T=float
           ]
-C:\Users\kii2\Documents\OpenGL\OpenGL\OpenGL_Lesson3\src\Utility\Math\Matrix.h(529,1): message : во время компиляции функции-члена класс шаблон "CMatrix<float> CMatrix<float>::GetRotMatrix(CVector<float>)"
-C:\Users\kii2\Documents\OpenGL\OpenGL\OpenGL_Lesson3\src\Objects\Components\ComponentTransform.h(64,24): message : выполняется компиляция ссылки на экземпляр шаблон функции "CMatrix<float> CMatrix<float>::GetRotMatrix(CVector<float>)"
-C:\Users\kii2\Documents\OpenGL\OpenGL\OpenGL_Lesson3\src\Objects\Components\ComponentTransform.h(59,1): message : выполняется компиляция ссылки на экземпляр класс шаблон функции "CMatrix<float>"
+C:\Users\SAYONARA\Documents\OpenGL\OpenGL_Lessons\OpenGL_Lesson3\src\Utility\Math\Matrix.h(528,1): message : во время компиляции функции-члена класс шаблон "CMatrix<float> CMatrix<float>::GetRotMatrix(CVector<float>)"
+C:\Users\SAYONARA\Documents\OpenGL\OpenGL_Lessons\OpenGL_Lesson3\src\Objects\Components\ComponentTransform.h(72,24): message : выполняется компиляция ссылки на экземпляр шаблон функции "CMatrix<float> CMatrix<float>::GetRotMatrix(CVector<float>)"
+C:\Users\SAYONARA\Documents\OpenGL\OpenGL_Lessons\OpenGL_Lesson3\src\Objects\Components\ComponentTransform.h(67,1): message : выполняется компиляция ссылки на экземпляр класс шаблон функции "CMatrix<float>"
   DisplayHandler.cpp
-C:\Users\kii2\Documents\OpenGL\OpenGL\OpenGL_Lesson3\src\Objects\Components\ComponentTransform.h(55,24): warning C4244: =: преобразование "double" в "T", возможна потеря данных
+C:\Users\SAYONARA\Documents\OpenGL\OpenGL_Lessons\OpenGL_Lesson3\src\Objects\Components\ComponentTransform.h(63,24): warning C4244: =: преобразование "double" в "T", возможна потеря данных
           with
           [
               T=float
           ]
-C:\Users\kii2\Documents\OpenGL\OpenGL\OpenGL_Lesson3\src\Objects\Components\ComponentTransform.h(56,24): warning C4244: =: преобразование "double" в "T", возможна потеря данных
+C:\Users\SAYONARA\Documents\OpenGL\OpenGL_Lessons\OpenGL_Lesson3\src\Objects\Components\ComponentTransform.h(64,24): warning C4244: =: преобразование "double" в "T", возможна потеря данных
           with
           [
               T=float
           ]
-C:\Users\kii2\Documents\OpenGL\OpenGL\OpenGL_Lesson3\src\Objects\Components\ComponentTransform.h(57,24): warning C4244: =: преобразование "double" в "T", возможна потеря данных
+C:\Users\SAYONARA\Documents\OpenGL\OpenGL_Lessons\OpenGL_Lesson3\src\Objects\Components\ComponentTransform.h(65,24): warning C4244: =: преобразование "double" в "T", возможна потеря данных
           with
           [
               T=float
           ]
-C:\Users\kii2\Documents\OpenGL\OpenGL\OpenGL_Lesson3\src\Utility\Math\Vector.h(347,20): warning C4244: инициализация: преобразование "double" в "size_t", возможна потеря данных
-C:\Users\kii2\Documents\OpenGL\OpenGL\OpenGL_Lesson3\src\Utility\Math\Vector.h(345,1): message : во время компиляции функции-члена класс шаблон "CVector<float> CVector<float>::operator +=(CVector<float>)"
-C:\Users\kii2\Documents\OpenGL\OpenGL\OpenGL_Lesson3\src\Objects\Components\ComponentTransform.h(75,20): message : выполняется компиляция ссылки на экземпляр шаблон функции "CVector<float> CVector<float>::operator +=(CVector<float>)"
-C:\Users\kii2\Documents\OpenGL\OpenGL\OpenGL_Lesson3\src\Objects\Components\ComponentTransform.h(13,20): message : выполняется компиляция ссылки на экземпляр класс шаблон функции "CVector<float>"
-C:\Users\kii2\Documents\OpenGL\OpenGL\OpenGL_Lesson3\src\Utility\Math\Matrix.h(530,1): warning C4305: аргумент: усечение из "double" в "T"
+C:\Users\SAYONARA\Documents\OpenGL\OpenGL_Lessons\OpenGL_Lesson3\src\Utility\Math\Vector.h(347,20): warning C4244: инициализация: преобразование "double" в "size_t", возможна потеря данных
+C:\Users\SAYONARA\Documents\OpenGL\OpenGL_Lessons\OpenGL_Lesson3\src\Utility\Math\Vector.h(345,1): message : во время компиляции функции-члена класс шаблон "CVector<float> CVector<float>::operator +=(CVector<float>)"
+C:\Users\SAYONARA\Documents\OpenGL\OpenGL_Lessons\OpenGL_Lesson3\src\Objects\Components\ComponentTransform.h(84,20): message : выполняется компиляция ссылки на экземпляр шаблон функции "CVector<float> CVector<float>::operator +=(CVector<float>)"
+C:\Users\SAYONARA\Documents\OpenGL\OpenGL_Lessons\OpenGL_Lesson3\src\Objects\Components\ComponentTransform.h(14,20): message : выполняется компиляция ссылки на экземпляр класс шаблон функции "CVector<float>"
+C:\Users\SAYONARA\Documents\OpenGL\OpenGL_Lessons\OpenGL_Lesson3\src\Utility\Math\Matrix.h(530,1): warning C4305: аргумент: усечение из "double" в "T"
           with
           [
               T=float
           ]
-C:\Users\kii2\Documents\OpenGL\OpenGL\OpenGL_Lesson3\src\Utility\Math\Matrix.h(529,1): message : во время компиляции функции-члена класс шаблон "CMatrix<float> CMatrix<float>::GetRotMatrix(CVector<float>)"
-C:\Users\kii2\Documents\OpenGL\OpenGL\OpenGL_Lesson3\src\Objects\Components\ComponentTransform.h(64,24): message : выполняется компиляция ссылки на экземпляр шаблон функции "CMatrix<float> CMatrix<float>::GetRotMatrix(CVector<float>)"
-C:\Users\kii2\Documents\OpenGL\OpenGL\OpenGL_Lesson3\src\Objects\Components\ComponentTransform.h(59,1): message : выполняется компиляция ссылки на экземпляр класс шаблон функции "CMatrix<float>"
+C:\Users\SAYONARA\Documents\OpenGL\OpenGL_Lessons\OpenGL_Lesson3\src\Utility\Math\Matrix.h(528,1): message : во время компиляции функции-члена класс шаблон "CMatrix<float> CMatrix<float>::GetRotMatrix(CVector<float>)"
+C:\Users\SAYONARA\Documents\OpenGL\OpenGL_Lessons\OpenGL_Lesson3\src\Objects\Components\ComponentTransform.h(72,24): message : выполняется компиляция ссылки на экземпляр шаблон функции "CMatrix<float> CMatrix<float>::GetRotMatrix(CVector<float>)"
+C:\Users\SAYONARA\Documents\OpenGL\OpenGL_Lessons\OpenGL_Lesson3\src\Objects\Components\ComponentTransform.h(67,1): message : выполняется компиляция ссылки на экземпляр класс шаблон функции "CMatrix<float>"
   KeyboardHandler.cpp
-C:\Users\kii2\Documents\OpenGL\OpenGL\OpenGL_Lesson3\src\Objects\Components\ComponentTransform.h(55,24): warning C4244: =: преобразование "double" в "T", возможна потеря данных
+C:\Users\SAYONARA\Documents\OpenGL\OpenGL_Lessons\OpenGL_Lesson3\src\Objects\Components\ComponentTransform.h(63,24): warning C4244: =: преобразование "double" в "T", возможна потеря данных
           with
           [
               T=float
           ]
-C:\Users\kii2\Documents\OpenGL\OpenGL\OpenGL_Lesson3\src\Objects\Components\ComponentTransform.h(56,24): warning C4244: =: преобразование "double" в "T", возможна потеря данных
+C:\Users\SAYONARA\Documents\OpenGL\OpenGL_Lessons\OpenGL_Lesson3\src\Objects\Components\ComponentTransform.h(64,24): warning C4244: =: преобразование "double" в "T", возможна потеря данных
           with
           [
               T=float
           ]
-C:\Users\kii2\Documents\OpenGL\OpenGL\OpenGL_Lesson3\src\Objects\Components\ComponentTransform.h(57,24): warning C4244: =: преобразование "double" в "T", возможна потеря данных
+C:\Users\SAYONARA\Documents\OpenGL\OpenGL_Lessons\OpenGL_Lesson3\src\Objects\Components\ComponentTransform.h(65,24): warning C4244: =: преобразование "double" в "T", возможна потеря данных
           with
           [
               T=float
           ]
-C:\Users\kii2\Documents\OpenGL\OpenGL\OpenGL_Lesson3\src\Utility\Math\Vector.h(347,20): warning C4244: инициализация: преобразование "double" в "size_t", возможна потеря данных
-C:\Users\kii2\Documents\OpenGL\OpenGL\OpenGL_Lesson3\src\Utility\Math\Vector.h(345,1): message : во время компиляции функции-члена класс шаблон "CVector<float> CVector<float>::operator +=(CVector<float>)"
-C:\Users\kii2\Documents\OpenGL\OpenGL\OpenGL_Lesson3\src\Objects\Components\ComponentTransform.h(75,20): message : выполняется компиляция ссылки на экземпляр шаблон функции "CVector<float> CVector<float>::operator +=(CVector<float>)"
-C:\Users\kii2\Documents\OpenGL\OpenGL\OpenGL_Lesson3\src\Objects\Components\ComponentTransform.h(13,20): message : выполняется компиляция ссылки на экземпляр класс шаблон функции "CVector<float>"
-C:\Users\kii2\Documents\OpenGL\OpenGL\OpenGL_Lesson3\src\Utility\Math\Matrix.h(530,1): warning C4305: аргумент: усечение из "double" в "T"
+C:\Users\SAYONARA\Documents\OpenGL\OpenGL_Lessons\OpenGL_Lesson3\src\Utility\Math\Vector.h(347,20): warning C4244: инициализация: преобразование "double" в "size_t", возможна потеря данных
+C:\Users\SAYONARA\Documents\OpenGL\OpenGL_Lessons\OpenGL_Lesson3\src\Utility\Math\Vector.h(345,1): message : во время компиляции функции-члена класс шаблон "CVector<float> CVector<float>::operator +=(CVector<float>)"
+C:\Users\SAYONARA\Documents\OpenGL\OpenGL_Lessons\OpenGL_Lesson3\src\Objects\Components\ComponentTransform.h(84,20): message : выполняется компиляция ссылки на экземпляр шаблон функции "CVector<float> CVector<float>::operator +=(CVector<float>)"
+C:\Users\SAYONARA\Documents\OpenGL\OpenGL_Lessons\OpenGL_Lesson3\src\Objects\Components\ComponentTransform.h(14,20): message : выполняется компиляция ссылки на экземпляр класс шаблон функции "CVector<float>"
+C:\Users\SAYONARA\Documents\OpenGL\OpenGL_Lessons\OpenGL_Lesson3\src\Utility\Math\Matrix.h(530,1): warning C4305: аргумент: усечение из "double" в "T"
           with
           [
               T=float
           ]
-C:\Users\kii2\Documents\OpenGL\OpenGL\OpenGL_Lesson3\src\Utility\Math\Matrix.h(529,1): message : во время компиляции функции-члена класс шаблон "CMatrix<float> CMatrix<float>::GetRotMatrix(CVector<float>)"
-C:\Users\kii2\Documents\OpenGL\OpenGL\OpenGL_Lesson3\src\Objects\Components\ComponentTransform.h(64,24): message : выполняется компиляция ссылки на экземпляр шаблон функции "CMatrix<float> CMatrix<float>::GetRotMatrix(CVector<float>)"
-C:\Users\kii2\Documents\OpenGL\OpenGL\OpenGL_Lesson3\src\Objects\Components\ComponentTransform.h(59,1): message : выполняется компиляция ссылки на экземпляр класс шаблон функции "CMatrix<float>"
+C:\Users\SAYONARA\Documents\OpenGL\OpenGL_Lessons\OpenGL_Lesson3\src\Utility\Math\Matrix.h(528,1): message : во время компиляции функции-члена класс шаблон "CMatrix<float> CMatrix<float>::GetRotMatrix(CVector<float>)"
+C:\Users\SAYONARA\Documents\OpenGL\OpenGL_Lessons\OpenGL_Lesson3\src\Objects\Components\ComponentTransform.h(72,24): message : выполняется компиляция ссылки на экземпляр шаблон функции "CMatrix<float> CMatrix<float>::GetRotMatrix(CVector<float>)"
+C:\Users\SAYONARA\Documents\OpenGL\OpenGL_Lessons\OpenGL_Lesson3\src\Objects\Components\ComponentTransform.h(67,1): message : выполняется компиляция ссылки на экземпляр класс шаблон функции "CMatrix<float>"
   MouseHandler.cpp
-C:\Users\kii2\Documents\OpenGL\OpenGL\OpenGL_Lesson3\src\Objects\Components\ComponentTransform.h(55,24): warning C4244: =: преобразование "double" в "T", возможна потеря данных
+C:\Users\SAYONARA\Documents\OpenGL\OpenGL_Lessons\OpenGL_Lesson3\src\Objects\Components\ComponentTransform.h(63,24): warning C4244: =: преобразование "double" в "T", возможна потеря данных
           with
           [
               T=float
           ]
-C:\Users\kii2\Documents\OpenGL\OpenGL\OpenGL_Lesson3\src\Objects\Components\ComponentTransform.h(56,24): warning C4244: =: преобразование "double" в "T", возможна потеря данных
+C:\Users\SAYONARA\Documents\OpenGL\OpenGL_Lessons\OpenGL_Lesson3\src\Objects\Components\ComponentTransform.h(64,24): warning C4244: =: преобразование "double" в "T", возможна потеря данных
           with
           [
               T=float
           ]
-C:\Users\kii2\Documents\OpenGL\OpenGL\OpenGL_Lesson3\src\Objects\Components\ComponentTransform.h(57,24): warning C4244: =: преобразование "double" в "T", возможна потеря данных
+C:\Users\SAYONARA\Documents\OpenGL\OpenGL_Lessons\OpenGL_Lesson3\src\Objects\Components\ComponentTransform.h(65,24): warning C4244: =: преобразование "double" в "T", возможна потеря данных
           with
           [
               T=float
           ]
-C:\Users\kii2\Documents\OpenGL\OpenGL\OpenGL_Lesson3\src\Utility\Math\Vector.h(347,20): warning C4244: инициализация: преобразование "double" в "size_t", возможна потеря данных
-C:\Users\kii2\Documents\OpenGL\OpenGL\OpenGL_Lesson3\src\Utility\Math\Vector.h(345,1): message : во время компиляции функции-члена класс шаблон "CVector<float> CVector<float>::operator +=(CVector<float>)"
-C:\Users\kii2\Documents\OpenGL\OpenGL\OpenGL_Lesson3\src\Objects\Components\ComponentTransform.h(75,20): message : выполняется компиляция ссылки на экземпляр шаблон функции "CVector<float> CVector<float>::operator +=(CVector<float>)"
-C:\Users\kii2\Documents\OpenGL\OpenGL\OpenGL_Lesson3\src\Objects\Components\ComponentTransform.h(13,20): message : выполняется компиляция ссылки на экземпляр класс шаблон функции "CVector<float>"
-C:\Users\kii2\Documents\OpenGL\OpenGL\OpenGL_Lesson3\src\Utility\Math\Matrix.h(530,1): warning C4305: аргумент: усечение из "double" в "T"
+C:\Users\SAYONARA\Documents\OpenGL\OpenGL_Lessons\OpenGL_Lesson3\src\Utility\Math\Vector.h(347,20): warning C4244: инициализация: преобразование "double" в "size_t", возможна потеря данных
+C:\Users\SAYONARA\Documents\OpenGL\OpenGL_Lessons\OpenGL_Lesson3\src\Utility\Math\Vector.h(345,1): message : во время компиляции функции-члена класс шаблон "CVector<float> CVector<float>::operator +=(CVector<float>)"
+C:\Users\SAYONARA\Documents\OpenGL\OpenGL_Lessons\OpenGL_Lesson3\src\Objects\Components\ComponentTransform.h(84,20): message : выполняется компиляция ссылки на экземпляр шаблон функции "CVector<float> CVector<float>::operator +=(CVector<float>)"
+C:\Users\SAYONARA\Documents\OpenGL\OpenGL_Lessons\OpenGL_Lesson3\src\Objects\Components\ComponentTransform.h(14,20): message : выполняется компиляция ссылки на экземпляр класс шаблон функции "CVector<float>"
+C:\Users\SAYONARA\Documents\OpenGL\OpenGL_Lessons\OpenGL_Lesson3\src\Utility\Math\Matrix.h(530,1): warning C4305: аргумент: усечение из "double" в "T"
           with
           [
               T=float
           ]
-C:\Users\kii2\Documents\OpenGL\OpenGL\OpenGL_Lesson3\src\Utility\Math\Matrix.h(529,1): message : во время компиляции функции-члена класс шаблон "CMatrix<float> CMatrix<float>::GetRotMatrix(CVector<float>)"
-C:\Users\kii2\Documents\OpenGL\OpenGL\OpenGL_Lesson3\src\Objects\Components\ComponentTransform.h(64,24): message : выполняется компиляция ссылки на экземпляр шаблон функции "CMatrix<float> CMatrix<float>::GetRotMatrix(CVector<float>)"
-C:\Users\kii2\Documents\OpenGL\OpenGL\OpenGL_Lesson3\src\Objects\Components\ComponentTransform.h(59,1): message : выполняется компиляция ссылки на экземпляр класс шаблон функции "CMatrix<float>"
+C:\Users\SAYONARA\Documents\OpenGL\OpenGL_Lessons\OpenGL_Lesson3\src\Utility\Math\Matrix.h(528,1): message : во время компиляции функции-члена класс шаблон "CMatrix<float> CMatrix<float>::GetRotMatrix(CVector<float>)"
+C:\Users\SAYONARA\Documents\OpenGL\OpenGL_Lessons\OpenGL_Lesson3\src\Objects\Components\ComponentTransform.h(72,24): message : выполняется компиляция ссылки на экземпляр шаблон функции "CMatrix<float> CMatrix<float>::GetRotMatrix(CVector<float>)"
+C:\Users\SAYONARA\Documents\OpenGL\OpenGL_Lessons\OpenGL_Lesson3\src\Objects\Components\ComponentTransform.h(67,1): message : выполняется компиляция ссылки на экземпляр класс шаблон функции "CMatrix<float>"
   SceneHandler.cpp
-C:\Users\kii2\Documents\OpenGL\OpenGL\OpenGL_Lesson3\src\Objects\Components\ComponentTransform.h(55,24): warning C4244: =: преобразование "double" в "T", возможна потеря данных
+C:\Users\SAYONARA\Documents\OpenGL\OpenGL_Lessons\OpenGL_Lesson3\src\Objects\Components\ComponentTransform.h(63,24): warning C4244: =: преобразование "double" в "T", возможна потеря данных
           with
           [
               T=float
           ]
-C:\Users\kii2\Documents\OpenGL\OpenGL\OpenGL_Lesson3\src\Objects\Components\ComponentTransform.h(56,24): warning C4244: =: преобразование "double" в "T", возможна потеря данных
+C:\Users\SAYONARA\Documents\OpenGL\OpenGL_Lessons\OpenGL_Lesson3\src\Objects\Components\ComponentTransform.h(64,24): warning C4244: =: преобразование "double" в "T", возможна потеря данных
           with
           [
               T=float
           ]
-C:\Users\kii2\Documents\OpenGL\OpenGL\OpenGL_Lesson3\src\Objects\Components\ComponentTransform.h(57,24): warning C4244: =: преобразование "double" в "T", возможна потеря данных
+C:\Users\SAYONARA\Documents\OpenGL\OpenGL_Lessons\OpenGL_Lesson3\src\Objects\Components\ComponentTransform.h(65,24): warning C4244: =: преобразование "double" в "T", возможна потеря данных
           with
           [
               T=float
           ]
-C:\Users\kii2\Documents\OpenGL\OpenGL\OpenGL_Lesson3\src\Utility\Math\Vector.h(347,20): warning C4244: инициализация: преобразование "double" в "size_t", возможна потеря данных
-C:\Users\kii2\Documents\OpenGL\OpenGL\OpenGL_Lesson3\src\Utility\Math\Vector.h(345,1): message : во время компиляции функции-члена класс шаблон "CVector<float> CVector<float>::operator +=(CVector<float>)"
-C:\Users\kii2\Documents\OpenGL\OpenGL\OpenGL_Lesson3\src\Objects\Components\ComponentTransform.h(75,20): message : выполняется компиляция ссылки на экземпляр шаблон функции "CVector<float> CVector<float>::operator +=(CVector<float>)"
-C:\Users\kii2\Documents\OpenGL\OpenGL\OpenGL_Lesson3\src\Objects\Components\ComponentTransform.h(13,20): message : выполняется компиляция ссылки на экземпляр класс шаблон функции "CVector<float>"
-C:\Users\kii2\Documents\OpenGL\OpenGL\OpenGL_Lesson3\src\Utility\Math\Matrix.h(530,1): warning C4305: аргумент: усечение из "double" в "T"
+C:\Users\SAYONARA\Documents\OpenGL\OpenGL_Lessons\OpenGL_Lesson3\src\Utility\Math\Vector.h(347,20): warning C4244: инициализация: преобразование "double" в "size_t", возможна потеря данных
+C:\Users\SAYONARA\Documents\OpenGL\OpenGL_Lessons\OpenGL_Lesson3\src\Utility\Math\Vector.h(345,1): message : во время компиляции функции-члена класс шаблон "CVector<float> CVector<float>::operator +=(CVector<float>)"
+C:\Users\SAYONARA\Documents\OpenGL\OpenGL_Lessons\OpenGL_Lesson3\src\Objects\Components\ComponentTransform.h(84,20): message : выполняется компиляция ссылки на экземпляр шаблон функции "CVector<float> CVector<float>::operator +=(CVector<float>)"
+C:\Users\SAYONARA\Documents\OpenGL\OpenGL_Lessons\OpenGL_Lesson3\src\Objects\Components\ComponentTransform.h(14,20): message : выполняется компиляция ссылки на экземпляр класс шаблон функции "CVector<float>"
+C:\Users\SAYONARA\Documents\OpenGL\OpenGL_Lessons\OpenGL_Lesson3\src\Utility\Math\Matrix.h(530,1): warning C4305: аргумент: усечение из "double" в "T"
           with
           [
               T=float
           ]
-C:\Users\kii2\Documents\OpenGL\OpenGL\OpenGL_Lesson3\src\Utility\Math\Matrix.h(529,1): message : во время компиляции функции-члена класс шаблон "CMatrix<float> CMatrix<float>::GetRotMatrix(CVector<float>)"
-C:\Users\kii2\Documents\OpenGL\OpenGL\OpenGL_Lesson3\src\Objects\Components\ComponentTransform.h(64,24): message : выполняется компиляция ссылки на экземпляр шаблон функции "CMatrix<float> CMatrix<float>::GetRotMatrix(CVector<float>)"
-C:\Users\kii2\Documents\OpenGL\OpenGL\OpenGL_Lesson3\src\Objects\Components\ComponentTransform.h(59,1): message : выполняется компиляция ссылки на экземпляр класс шаблон функции "CMatrix<float>"
+C:\Users\SAYONARA\Documents\OpenGL\OpenGL_Lessons\OpenGL_Lesson3\src\Utility\Math\Matrix.h(528,1): message : во время компиляции функции-члена класс шаблон "CMatrix<float> CMatrix<float>::GetRotMatrix(CVector<float>)"
+C:\Users\SAYONARA\Documents\OpenGL\OpenGL_Lessons\OpenGL_Lesson3\src\Objects\Components\ComponentTransform.h(72,24): message : выполняется компиляция ссылки на экземпляр шаблон функции "CMatrix<float> CMatrix<float>::GetRotMatrix(CVector<float>)"
+C:\Users\SAYONARA\Documents\OpenGL\OpenGL_Lessons\OpenGL_Lesson3\src\Objects\Components\ComponentTransform.h(67,1): message : выполняется компиляция ссылки на экземпляр класс шаблон функции "CMatrix<float>"
   OpenGLMainClass.cpp
-C:\Users\kii2\Documents\OpenGL\OpenGL\OpenGL_Lesson3\src\Objects\Components\ComponentTransform.h(55,24): warning C4244: =: преобразование "double" в "T", возможна потеря данных
+C:\Users\SAYONARA\Documents\OpenGL\OpenGL_Lessons\OpenGL_Lesson3\src\Objects\Components\ComponentTransform.h(63,24): warning C4244: =: преобразование "double" в "T", возможна потеря данных
           with
           [
               T=float
           ]
-C:\Users\kii2\Documents\OpenGL\OpenGL\OpenGL_Lesson3\src\Objects\Components\ComponentTransform.h(56,24): warning C4244: =: преобразование "double" в "T", возможна потеря данных
+C:\Users\SAYONARA\Documents\OpenGL\OpenGL_Lessons\OpenGL_Lesson3\src\Objects\Components\ComponentTransform.h(64,24): warning C4244: =: преобразование "double" в "T", возможна потеря данных
           with
           [
               T=float
           ]
-C:\Users\kii2\Documents\OpenGL\OpenGL\OpenGL_Lesson3\src\Objects\Components\ComponentTransform.h(57,24): warning C4244: =: преобразование "double" в "T", возможна потеря данных
+C:\Users\SAYONARA\Documents\OpenGL\OpenGL_Lessons\OpenGL_Lesson3\src\Objects\Components\ComponentTransform.h(65,24): warning C4244: =: преобразование "double" в "T", возможна потеря данных
           with
           [
               T=float
           ]
-C:\Users\kii2\Documents\OpenGL\OpenGL\OpenGL_Lesson3\src\Utility\Math\Vector.h(347,20): warning C4244: инициализация: преобразование "double" в "size_t", возможна потеря данных
-C:\Users\kii2\Documents\OpenGL\OpenGL\OpenGL_Lesson3\src\Utility\Math\Vector.h(345,1): message : во время компиляции функции-члена класс шаблон "CVector<float> CVector<float>::operator +=(CVector<float>)"
-C:\Users\kii2\Documents\OpenGL\OpenGL\OpenGL_Lesson3\src\Objects\Components\ComponentTransform.h(75,20): message : выполняется компиляция ссылки на экземпляр шаблон функции "CVector<float> CVector<float>::operator +=(CVector<float>)"
-C:\Users\kii2\Documents\OpenGL\OpenGL\OpenGL_Lesson3\src\Objects\Components\ComponentTransform.h(13,20): message : выполняется компиляция ссылки на экземпляр класс шаблон функции "CVector<float>"
-C:\Users\kii2\Documents\OpenGL\OpenGL\OpenGL_Lesson3\src\Utility\Math\Matrix.h(530,1): warning C4305: аргумент: усечение из "double" в "T"
+C:\Users\SAYONARA\Documents\OpenGL\OpenGL_Lessons\OpenGL_Lesson3\src\Utility\Math\Vector.h(347,20): warning C4244: инициализация: преобразование "double" в "size_t", возможна потеря данных
+C:\Users\SAYONARA\Documents\OpenGL\OpenGL_Lessons\OpenGL_Lesson3\src\Utility\Math\Vector.h(345,1): message : во время компиляции функции-члена класс шаблон "CVector<float> CVector<float>::operator +=(CVector<float>)"
+C:\Users\SAYONARA\Documents\OpenGL\OpenGL_Lessons\OpenGL_Lesson3\src\Objects\Components\ComponentTransform.h(84,20): message : выполняется компиляция ссылки на экземпляр шаблон функции "CVector<float> CVector<float>::operator +=(CVector<float>)"
+C:\Users\SAYONARA\Documents\OpenGL\OpenGL_Lessons\OpenGL_Lesson3\src\Objects\Components\ComponentTransform.h(14,20): message : выполняется компиляция ссылки на экземпляр класс шаблон функции "CVector<float>"
+C:\Users\SAYONARA\Documents\OpenGL\OpenGL_Lessons\OpenGL_Lesson3\src\Utility\Math\Matrix.h(530,1): warning C4305: аргумент: усечение из "double" в "T"
           with
           [
               T=float
           ]
-C:\Users\kii2\Documents\OpenGL\OpenGL\OpenGL_Lesson3\src\Utility\Math\Matrix.h(529,1): message : во время компиляции функции-члена класс шаблон "CMatrix<float> CMatrix<float>::GetRotMatrix(CVector<float>)"
-C:\Users\kii2\Documents\OpenGL\OpenGL\OpenGL_Lesson3\src\Objects\Components\ComponentTransform.h(64,24): message : выполняется компиляция ссылки на экземпляр шаблон функции "CMatrix<float> CMatrix<float>::GetRotMatrix(CVector<float>)"
-C:\Users\kii2\Documents\OpenGL\OpenGL\OpenGL_Lesson3\src\Objects\Components\ComponentTransform.h(59,1): message : выполняется компиляция ссылки на экземпляр класс шаблон функции "CMatrix<float>"
-C:\Program Files\Microsoft Visual Studio\2022\Professional\VC\Tools\MSVC\14.35.32215\include\xutility(275,77): warning C4244: аргумент: преобразование "_Ty" в "float", возможна потеря данных
+C:\Users\SAYONARA\Documents\OpenGL\OpenGL_Lessons\OpenGL_Lesson3\src\Utility\Math\Matrix.h(528,1): message : во время компиляции функции-члена класс шаблон "CMatrix<float> CMatrix<float>::GetRotMatrix(CVector<float>)"
+C:\Users\SAYONARA\Documents\OpenGL\OpenGL_Lessons\OpenGL_Lesson3\src\Objects\Components\ComponentTransform.h(72,24): message : выполняется компиляция ссылки на экземпляр шаблон функции "CMatrix<float> CMatrix<float>::GetRotMatrix(CVector<float>)"
+C:\Users\SAYONARA\Documents\OpenGL\OpenGL_Lessons\OpenGL_Lesson3\src\Objects\Components\ComponentTransform.h(67,1): message : выполняется компиляция ссылки на экземпляр класс шаблон функции "CMatrix<float>"
+C:\Program Files\Microsoft Visual Studio\2022\Enterprise\VC\Tools\MSVC\14.35.32215\include\xutility(275,77): warning C4244: аргумент: преобразование "_Ty" в "float", возможна потеря данных
           with
           [
               _Ty=int
           ]
-C:\Program Files\Microsoft Visual Studio\2022\Professional\VC\Tools\MSVC\14.35.32215\include\memory(1983): message : выполняется компиляция ссылки на экземпляр шаблон функции "void std::_Construct_in_place<_Ty,int>(_Ty &,int &&) noexcept(false)"
+C:\Program Files\Microsoft Visual Studio\2022\Enterprise\VC\Tools\MSVC\14.35.32215\include\memory(1983): message : выполняется компиляция ссылки на экземпляр шаблон функции "void std::_Construct_in_place<_Ty,int>(_Ty &,int &&) noexcept(false)"
           with
           [
               _Ty=CCube
           ]
-C:\Program Files\Microsoft Visual Studio\2022\Professional\VC\Tools\MSVC\14.35.32215\include\memory(2663): message : выполняется компиляция ссылки на экземпляр шаблон функции "std::_Ref_count_obj2<CCube>::_Ref_count_obj2<_Ty>(_Ty &&)"
+C:\Program Files\Microsoft Visual Studio\2022\Enterprise\VC\Tools\MSVC\14.35.32215\include\memory(2663): message : выполняется компиляция ссылки на экземпляр шаблон функции "std::_Ref_count_obj2<CCube>::_Ref_count_obj2<_Ty>(_Ty &&)"
           with
           [
               _Ty=int
           ]
-C:\Program Files\Microsoft Visual Studio\2022\Professional\VC\Tools\MSVC\14.35.32215\include\memory(2664,20): message : выполняется компиляция ссылки на экземпляр шаблон функции "std::_Ref_count_obj2<CCube>::_Ref_count_obj2<_Ty>(_Ty &&)"
+C:\Program Files\Microsoft Visual Studio\2022\Enterprise\VC\Tools\MSVC\14.35.32215\include\memory(2664,20): message : выполняется компиляция ссылки на экземпляр шаблон функции "std::_Ref_count_obj2<CCube>::_Ref_count_obj2<_Ty>(_Ty &&)"
           with
           [
               _Ty=int
           ]
-C:\Users\kii2\Documents\OpenGL\OpenGL\OpenGL_Lesson3\src\Main\OpenGLMainClass.cpp(93,53): message : выполняется компиляция ссылки на экземпляр шаблон функции "std::shared_ptr<CCube> std::make_shared<CCube,int>(int &&)"
+C:\Users\SAYONARA\Documents\OpenGL\OpenGL_Lessons\OpenGL_Lesson3\src\Main\OpenGLMainClass.cpp(100,53): message : выполняется компиляция ссылки на экземпляр шаблон функции "std::shared_ptr<CCube> std::make_shared<CCube,int>(int &&)"
   ComponentCameraMouse .cpp
-C:\Users\kii2\Documents\OpenGL\OpenGL\OpenGL_Lesson3\src\Objects\Components\ComponentTransform.h(55,24): warning C4244: =: преобразование "double" в "T", возможна потеря данных
+C:\Users\SAYONARA\Documents\OpenGL\OpenGL_Lessons\OpenGL_Lesson3\src\Objects\Components\ComponentTransform.h(63,24): warning C4244: =: преобразование "double" в "T", возможна потеря данных
           with
           [
               T=float
           ]
-C:\Users\kii2\Documents\OpenGL\OpenGL\OpenGL_Lesson3\src\Objects\Components\ComponentTransform.h(56,24): warning C4244: =: преобразование "double" в "T", возможна потеря данных
+C:\Users\SAYONARA\Documents\OpenGL\OpenGL_Lessons\OpenGL_Lesson3\src\Objects\Components\ComponentTransform.h(64,24): warning C4244: =: преобразование "double" в "T", возможна потеря данных
           with
           [
               T=float
           ]
-C:\Users\kii2\Documents\OpenGL\OpenGL\OpenGL_Lesson3\src\Objects\Components\ComponentTransform.h(57,24): warning C4244: =: преобразование "double" в "T", возможна потеря данных
+C:\Users\SAYONARA\Documents\OpenGL\OpenGL_Lessons\OpenGL_Lesson3\src\Objects\Components\ComponentTransform.h(65,24): warning C4244: =: преобразование "double" в "T", возможна потеря данных
           with
           [
               T=float
           ]
-C:\Users\kii2\Documents\OpenGL\OpenGL\OpenGL_Lesson3\src\Utility\Math\Vector.h(347,20): warning C4244: инициализация: преобразование "double" в "size_t", возможна потеря данных
-C:\Users\kii2\Documents\OpenGL\OpenGL\OpenGL_Lesson3\src\Utility\Math\Vector.h(345,1): message : во время компиляции функции-члена класс шаблон "CVector<float> CVector<float>::operator +=(CVector<float>)"
-C:\Users\kii2\Documents\OpenGL\OpenGL\OpenGL_Lesson3\src\Objects\Components\ComponentTransform.h(75,20): message : выполняется компиляция ссылки на экземпляр шаблон функции "CVector<float> CVector<float>::operator +=(CVector<float>)"
-C:\Users\kii2\Documents\OpenGL\OpenGL\OpenGL_Lesson3\src\Objects\Components\ComponentTransform.h(13,20): message : выполняется компиляция ссылки на экземпляр класс шаблон функции "CVector<float>"
-C:\Users\kii2\Documents\OpenGL\OpenGL\OpenGL_Lesson3\src\Utility\Math\Matrix.h(530,1): warning C4305: аргумент: усечение из "double" в "T"
+C:\Users\SAYONARA\Documents\OpenGL\OpenGL_Lessons\OpenGL_Lesson3\src\Utility\Math\Vector.h(347,20): warning C4244: инициализация: преобразование "double" в "size_t", возможна потеря данных
+C:\Users\SAYONARA\Documents\OpenGL\OpenGL_Lessons\OpenGL_Lesson3\src\Utility\Math\Vector.h(345,1): message : во время компиляции функции-члена класс шаблон "CVector<float> CVector<float>::operator +=(CVector<float>)"
+C:\Users\SAYONARA\Documents\OpenGL\OpenGL_Lessons\OpenGL_Lesson3\src\Objects\Components\ComponentTransform.h(84,20): message : выполняется компиляция ссылки на экземпляр шаблон функции "CVector<float> CVector<float>::operator +=(CVector<float>)"
+C:\Users\SAYONARA\Documents\OpenGL\OpenGL_Lessons\OpenGL_Lesson3\src\Objects\Components\ComponentTransform.h(14,20): message : выполняется компиляция ссылки на экземпляр класс шаблон функции "CVector<float>"
+C:\Users\SAYONARA\Documents\OpenGL\OpenGL_Lessons\OpenGL_Lesson3\src\Utility\Math\Matrix.h(530,1): warning C4305: аргумент: усечение из "double" в "T"
           with
           [
               T=float
           ]
-C:\Users\kii2\Documents\OpenGL\OpenGL\OpenGL_Lesson3\src\Utility\Math\Matrix.h(529,1): message : во время компиляции функции-члена класс шаблон "CMatrix<float> CMatrix<float>::GetRotMatrix(CVector<float>)"
-C:\Users\kii2\Documents\OpenGL\OpenGL\OpenGL_Lesson3\src\Objects\Components\ComponentTransform.h(64,24): message : выполняется компиляция ссылки на экземпляр шаблон функции "CMatrix<float> CMatrix<float>::GetRotMatrix(CVector<float>)"
-C:\Users\kii2\Documents\OpenGL\OpenGL\OpenGL_Lesson3\src\Objects\Components\ComponentTransform.h(59,1): message : выполняется компиляция ссылки на экземпляр класс шаблон функции "CMatrix<float>"
+C:\Users\SAYONARA\Documents\OpenGL\OpenGL_Lessons\OpenGL_Lesson3\src\Utility\Math\Matrix.h(528,1): message : во время компиляции функции-члена класс шаблон "CMatrix<float> CMatrix<float>::GetRotMatrix(CVector<float>)"
+C:\Users\SAYONARA\Documents\OpenGL\OpenGL_Lessons\OpenGL_Lesson3\src\Objects\Components\ComponentTransform.h(72,24): message : выполняется компиляция ссылки на экземпляр шаблон функции "CMatrix<float> CMatrix<float>::GetRotMatrix(CVector<float>)"
+C:\Users\SAYONARA\Documents\OpenGL\OpenGL_Lessons\OpenGL_Lesson3\src\Objects\Components\ComponentTransform.h(67,1): message : выполняется компиляция ссылки на экземпляр класс шаблон функции "CMatrix<float>"
+  ComponentTransform.cpp
+C:\Users\SAYONARA\Documents\OpenGL\OpenGL_Lessons\OpenGL_Lesson3\src\Objects\Components\ComponentTransform.h(63,24): warning C4244: =: преобразование "double" в "T", возможна потеря данных
+          with
+          [
+              T=float
+          ]
+C:\Users\SAYONARA\Documents\OpenGL\OpenGL_Lessons\OpenGL_Lesson3\src\Objects\Components\ComponentTransform.h(64,24): warning C4244: =: преобразование "double" в "T", возможна потеря данных
+          with
+          [
+              T=float
+          ]
+C:\Users\SAYONARA\Documents\OpenGL\OpenGL_Lessons\OpenGL_Lesson3\src\Objects\Components\ComponentTransform.h(65,24): warning C4244: =: преобразование "double" в "T", возможна потеря данных
+          with
+          [
+              T=float
+          ]
+C:\Users\SAYONARA\Documents\OpenGL\OpenGL_Lessons\OpenGL_Lesson3\src\Utility\Math\Vector.h(347,20): warning C4244: инициализация: преобразование "double" в "size_t", возможна потеря данных
+C:\Users\SAYONARA\Documents\OpenGL\OpenGL_Lessons\OpenGL_Lesson3\src\Utility\Math\Vector.h(345,1): message : во время компиляции функции-члена класс шаблон "CVector<float> CVector<float>::operator +=(CVector<float>)"
+C:\Users\SAYONARA\Documents\OpenGL\OpenGL_Lessons\OpenGL_Lesson3\src\Objects\Components\ComponentTransform.h(84,20): message : выполняется компиляция ссылки на экземпляр шаблон функции "CVector<float> CVector<float>::operator +=(CVector<float>)"
+C:\Users\SAYONARA\Documents\OpenGL\OpenGL_Lessons\OpenGL_Lesson3\src\Objects\Components\ComponentTransform.h(14,20): message : выполняется компиляция ссылки на экземпляр класс шаблон функции "CVector<float>"
+C:\Users\SAYONARA\Documents\OpenGL\OpenGL_Lessons\OpenGL_Lesson3\src\Utility\Math\Matrix.h(530,1): warning C4305: аргумент: усечение из "double" в "T"
+          with
+          [
+              T=float
+          ]
+C:\Users\SAYONARA\Documents\OpenGL\OpenGL_Lessons\OpenGL_Lesson3\src\Utility\Math\Matrix.h(528,1): message : во время компиляции функции-члена класс шаблон "CMatrix<float> CMatrix<float>::GetRotMatrix(CVector<float>)"
+C:\Users\SAYONARA\Documents\OpenGL\OpenGL_Lessons\OpenGL_Lesson3\src\Objects\Components\ComponentTransform.h(72,24): message : выполняется компиляция ссылки на экземпляр шаблон функции "CMatrix<float> CMatrix<float>::GetRotMatrix(CVector<float>)"
+C:\Users\SAYONARA\Documents\OpenGL\OpenGL_Lessons\OpenGL_Lesson3\src\Objects\Components\ComponentTransform.h(67,1): message : выполняется компиляция ссылки на экземпляр класс шаблон функции "CMatrix<float>"
   CCube.cpp
-C:\Users\kii2\Documents\OpenGL\OpenGL\OpenGL_Lesson3\src\Objects\Components\ComponentTransform.h(55,24): warning C4244: =: преобразование "double" в "T", возможна потеря данных
+C:\Users\SAYONARA\Documents\OpenGL\OpenGL_Lessons\OpenGL_Lesson3\src\Objects\Components\ComponentTransform.h(63,24): warning C4244: =: преобразование "double" в "T", возможна потеря данных
           with
           [
               T=float
           ]
-C:\Users\kii2\Documents\OpenGL\OpenGL\OpenGL_Lesson3\src\Objects\Components\ComponentTransform.h(56,24): warning C4244: =: преобразование "double" в "T", возможна потеря данных
+C:\Users\SAYONARA\Documents\OpenGL\OpenGL_Lessons\OpenGL_Lesson3\src\Objects\Components\ComponentTransform.h(64,24): warning C4244: =: преобразование "double" в "T", возможна потеря данных
           with
           [
               T=float
           ]
-C:\Users\kii2\Documents\OpenGL\OpenGL\OpenGL_Lesson3\src\Objects\Components\ComponentTransform.h(57,24): warning C4244: =: преобразование "double" в "T", возможна потеря данных
+C:\Users\SAYONARA\Documents\OpenGL\OpenGL_Lessons\OpenGL_Lesson3\src\Objects\Components\ComponentTransform.h(65,24): warning C4244: =: преобразование "double" в "T", возможна потеря данных
           with
           [
               T=float
           ]
-C:\Users\kii2\Documents\OpenGL\OpenGL\OpenGL_Lesson3\src\Utility\Math\Vector.h(347,20): warning C4244: инициализация: преобразование "double" в "size_t", возможна потеря данных
-C:\Users\kii2\Documents\OpenGL\OpenGL\OpenGL_Lesson3\src\Utility\Math\Vector.h(345,1): message : во время компиляции функции-члена класс шаблон "CVector<float> CVector<float>::operator +=(CVector<float>)"
-C:\Users\kii2\Documents\OpenGL\OpenGL\OpenGL_Lesson3\src\Objects\Components\ComponentTransform.h(75,20): message : выполняется компиляция ссылки на экземпляр шаблон функции "CVector<float> CVector<float>::operator +=(CVector<float>)"
-C:\Users\kii2\Documents\OpenGL\OpenGL\OpenGL_Lesson3\src\Objects\Components\ComponentTransform.h(13,20): message : выполняется компиляция ссылки на экземпляр класс шаблон функции "CVector<float>"
-C:\Users\kii2\Documents\OpenGL\OpenGL\OpenGL_Lesson3\src\Utility\Math\Matrix.h(530,1): warning C4305: аргумент: усечение из "double" в "T"
+C:\Users\SAYONARA\Documents\OpenGL\OpenGL_Lessons\OpenGL_Lesson3\src\Utility\Math\Vector.h(347,20): warning C4244: инициализация: преобразование "double" в "size_t", возможна потеря данных
+C:\Users\SAYONARA\Documents\OpenGL\OpenGL_Lessons\OpenGL_Lesson3\src\Utility\Math\Vector.h(345,1): message : во время компиляции функции-члена класс шаблон "CVector<float> CVector<float>::operator +=(CVector<float>)"
+C:\Users\SAYONARA\Documents\OpenGL\OpenGL_Lessons\OpenGL_Lesson3\src\Objects\Components\ComponentTransform.h(84,20): message : выполняется компиляция ссылки на экземпляр шаблон функции "CVector<float> CVector<float>::operator +=(CVector<float>)"
+C:\Users\SAYONARA\Documents\OpenGL\OpenGL_Lessons\OpenGL_Lesson3\src\Objects\Components\ComponentTransform.h(14,20): message : выполняется компиляция ссылки на экземпляр класс шаблон функции "CVector<float>"
+C:\Users\SAYONARA\Documents\OpenGL\OpenGL_Lessons\OpenGL_Lesson3\src\Utility\Math\Matrix.h(530,1): warning C4305: аргумент: усечение из "double" в "T"
           with
           [
               T=float
           ]
-C:\Users\kii2\Documents\OpenGL\OpenGL\OpenGL_Lesson3\src\Utility\Math\Matrix.h(529,1): message : во время компиляции функции-члена класс шаблон "CMatrix<float> CMatrix<float>::GetRotMatrix(CVector<float>)"
-C:\Users\kii2\Documents\OpenGL\OpenGL\OpenGL_Lesson3\src\Objects\Components\ComponentTransform.h(64,24): message : выполняется компиляция ссылки на экземпляр шаблон функции "CMatrix<float> CMatrix<float>::GetRotMatrix(CVector<float>)"
-C:\Users\kii2\Documents\OpenGL\OpenGL\OpenGL_Lesson3\src\Objects\Components\ComponentTransform.h(59,1): message : выполняется компиляция ссылки на экземпляр класс шаблон функции "CMatrix<float>"
+C:\Users\SAYONARA\Documents\OpenGL\OpenGL_Lessons\OpenGL_Lesson3\src\Utility\Math\Matrix.h(528,1): message : во время компиляции функции-члена класс шаблон "CMatrix<float> CMatrix<float>::GetRotMatrix(CVector<float>)"
+C:\Users\SAYONARA\Documents\OpenGL\OpenGL_Lessons\OpenGL_Lesson3\src\Objects\Components\ComponentTransform.h(72,24): message : выполняется компиляция ссылки на экземпляр шаблон функции "CMatrix<float> CMatrix<float>::GetRotMatrix(CVector<float>)"
+C:\Users\SAYONARA\Documents\OpenGL\OpenGL_Lessons\OpenGL_Lesson3\src\Objects\Components\ComponentTransform.h(67,1): message : выполняется компиляция ссылки на экземпляр класс шаблон функции "CMatrix<float>"
+  BaseLight.cpp
+C:\Users\SAYONARA\Documents\OpenGL\OpenGL_Lessons\OpenGL_Lesson3\src\Objects\Components\ComponentTransform.h(63,24): warning C4244: =: преобразование "double" в "T", возможна потеря данных
+          with
+          [
+              T=float
+          ]
+C:\Users\SAYONARA\Documents\OpenGL\OpenGL_Lessons\OpenGL_Lesson3\src\Objects\Components\ComponentTransform.h(64,24): warning C4244: =: преобразование "double" в "T", возможна потеря данных
+          with
+          [
+              T=float
+          ]
+C:\Users\SAYONARA\Documents\OpenGL\OpenGL_Lessons\OpenGL_Lesson3\src\Objects\Components\ComponentTransform.h(65,24): warning C4244: =: преобразование "double" в "T", возможна потеря данных
+          with
+          [
+              T=float
+          ]
+C:\Users\SAYONARA\Documents\OpenGL\OpenGL_Lessons\OpenGL_Lesson3\src\Utility\Math\Vector.h(347,20): warning C4244: инициализация: преобразование "double" в "size_t", возможна потеря данных
+C:\Users\SAYONARA\Documents\OpenGL\OpenGL_Lessons\OpenGL_Lesson3\src\Utility\Math\Vector.h(345,1): message : во время компиляции функции-члена класс шаблон "CVector<float> CVector<float>::operator +=(CVector<float>)"
+C:\Users\SAYONARA\Documents\OpenGL\OpenGL_Lessons\OpenGL_Lesson3\src\Objects\Components\ComponentTransform.h(84,20): message : выполняется компиляция ссылки на экземпляр шаблон функции "CVector<float> CVector<float>::operator +=(CVector<float>)"
+C:\Users\SAYONARA\Documents\OpenGL\OpenGL_Lessons\OpenGL_Lesson3\src\Objects\Components\ComponentTransform.h(14,20): message : выполняется компиляция ссылки на экземпляр класс шаблон функции "CVector<float>"
+C:\Users\SAYONARA\Documents\OpenGL\OpenGL_Lessons\OpenGL_Lesson3\src\Utility\Math\Matrix.h(530,1): warning C4305: аргумент: усечение из "double" в "T"
+          with
+          [
+              T=float
+          ]
+C:\Users\SAYONARA\Documents\OpenGL\OpenGL_Lessons\OpenGL_Lesson3\src\Utility\Math\Matrix.h(528,1): message : во время компиляции функции-члена класс шаблон "CMatrix<float> CMatrix<float>::GetRotMatrix(CVector<float>)"
+C:\Users\SAYONARA\Documents\OpenGL\OpenGL_Lessons\OpenGL_Lesson3\src\Objects\Components\ComponentTransform.h(72,24): message : выполняется компиляция ссылки на экземпляр шаблон функции "CMatrix<float> CMatrix<float>::GetRotMatrix(CVector<float>)"
+C:\Users\SAYONARA\Documents\OpenGL\OpenGL_Lessons\OpenGL_Lesson3\src\Objects\Components\ComponentTransform.h(67,1): message : выполняется компиляция ссылки на экземпляр класс шаблон функции "CMatrix<float>"
   Scene.cpp
-C:\Users\kii2\Documents\OpenGL\OpenGL\OpenGL_Lesson3\src\Objects\Components\ComponentTransform.h(55,24): warning C4244: =: преобразование "double" в "T", возможна потеря данных
+C:\Users\SAYONARA\Documents\OpenGL\OpenGL_Lessons\OpenGL_Lesson3\src\Objects\Components\ComponentTransform.h(63,24): warning C4244: =: преобразование "double" в "T", возможна потеря данных
           with
           [
               T=float
           ]
-C:\Users\kii2\Documents\OpenGL\OpenGL\OpenGL_Lesson3\src\Objects\Components\ComponentTransform.h(56,24): warning C4244: =: преобразование "double" в "T", возможна потеря данных
+C:\Users\SAYONARA\Documents\OpenGL\OpenGL_Lessons\OpenGL_Lesson3\src\Objects\Components\ComponentTransform.h(64,24): warning C4244: =: преобразование "double" в "T", возможна потеря данных
           with
           [
               T=float
           ]
-C:\Users\kii2\Documents\OpenGL\OpenGL\OpenGL_Lesson3\src\Objects\Components\ComponentTransform.h(57,24): warning C4244: =: преобразование "double" в "T", возможна потеря данных
+C:\Users\SAYONARA\Documents\OpenGL\OpenGL_Lessons\OpenGL_Lesson3\src\Objects\Components\ComponentTransform.h(65,24): warning C4244: =: преобразование "double" в "T", возможна потеря данных
           with
           [
               T=float
           ]
-C:\Users\kii2\Documents\OpenGL\OpenGL\OpenGL_Lesson3\src\Utility\Math\Vector.h(347,20): warning C4244: инициализация: преобразование "double" в "size_t", возможна потеря данных
-C:\Users\kii2\Documents\OpenGL\OpenGL\OpenGL_Lesson3\src\Utility\Math\Vector.h(345,1): message : во время компиляции функции-члена класс шаблон "CVector<float> CVector<float>::operator +=(CVector<float>)"
-C:\Users\kii2\Documents\OpenGL\OpenGL\OpenGL_Lesson3\src\Objects\Components\ComponentTransform.h(75,20): message : выполняется компиляция ссылки на экземпляр шаблон функции "CVector<float> CVector<float>::operator +=(CVector<float>)"
-C:\Users\kii2\Documents\OpenGL\OpenGL\OpenGL_Lesson3\src\Objects\Components\ComponentTransform.h(13,20): message : выполняется компиляция ссылки на экземпляр класс шаблон функции "CVector<float>"
-C:\Users\kii2\Documents\OpenGL\OpenGL\OpenGL_Lesson3\src\Utility\Math\Matrix.h(530,1): warning C4305: аргумент: усечение из "double" в "T"
+C:\Users\SAYONARA\Documents\OpenGL\OpenGL_Lessons\OpenGL_Lesson3\src\Utility\Math\Vector.h(347,20): warning C4244: инициализация: преобразование "double" в "size_t", возможна потеря данных
+C:\Users\SAYONARA\Documents\OpenGL\OpenGL_Lessons\OpenGL_Lesson3\src\Utility\Math\Vector.h(345,1): message : во время компиляции функции-члена класс шаблон "CVector<float> CVector<float>::operator +=(CVector<float>)"
+C:\Users\SAYONARA\Documents\OpenGL\OpenGL_Lessons\OpenGL_Lesson3\src\Objects\Components\ComponentTransform.h(84,20): message : выполняется компиляция ссылки на экземпляр шаблон функции "CVector<float> CVector<float>::operator +=(CVector<float>)"
+C:\Users\SAYONARA\Documents\OpenGL\OpenGL_Lessons\OpenGL_Lesson3\src\Objects\Components\ComponentTransform.h(14,20): message : выполняется компиляция ссылки на экземпляр класс шаблон функции "CVector<float>"
+C:\Users\SAYONARA\Documents\OpenGL\OpenGL_Lessons\OpenGL_Lesson3\src\Utility\Math\Matrix.h(530,1): warning C4305: аргумент: усечение из "double" в "T"
           with
           [
               T=float
           ]
-C:\Users\kii2\Documents\OpenGL\OpenGL\OpenGL_Lesson3\src\Utility\Math\Matrix.h(529,1): message : во время компиляции функции-члена класс шаблон "CMatrix<float> CMatrix<float>::GetRotMatrix(CVector<float>)"
-C:\Users\kii2\Documents\OpenGL\OpenGL\OpenGL_Lesson3\src\Objects\Components\ComponentTransform.h(64,24): message : выполняется компиляция ссылки на экземпляр шаблон функции "CMatrix<float> CMatrix<float>::GetRotMatrix(CVector<float>)"
-C:\Users\kii2\Documents\OpenGL\OpenGL\OpenGL_Lesson3\src\Objects\Components\ComponentTransform.h(59,1): message : выполняется компиляция ссылки на экземпляр класс шаблон функции "CMatrix<float>"
+C:\Users\SAYONARA\Documents\OpenGL\OpenGL_Lessons\OpenGL_Lesson3\src\Utility\Math\Matrix.h(528,1): message : во время компиляции функции-члена класс шаблон "CMatrix<float> CMatrix<float>::GetRotMatrix(CVector<float>)"
+C:\Users\SAYONARA\Documents\OpenGL\OpenGL_Lessons\OpenGL_Lesson3\src\Objects\Components\ComponentTransform.h(72,24): message : выполняется компиляция ссылки на экземпляр шаблон функции "CMatrix<float> CMatrix<float>::GetRotMatrix(CVector<float>)"
+C:\Users\SAYONARA\Documents\OpenGL\OpenGL_Lessons\OpenGL_Lesson3\src\Objects\Components\ComponentTransform.h(67,1): message : выполняется компиляция ссылки на экземпляр класс шаблон функции "CMatrix<float>"
   Создание кода...
-C:\Users\kii2\Documents\OpenGL\OpenGL\OpenGL_Lesson3\src\Objects\Components\Component.h(111): warning C4715: CComponent::GetAddParentComponent<CComponentTransform,CObject,CBaseEntity>: значение возвращается не при всех путях выполнения
-C:\Users\kii2\Documents\OpenGL\OpenGL\OpenGL_Lesson3\src\Objects\Components\Component.h(111): warning C4715: CComponent::GetAddParentComponent<CComponentTransform,CComponent,CBaseEntity>: значение возвращается не при всех путях выполнения
-C:\Users\kii2\Documents\OpenGL\OpenGL\OpenGL_Lesson3\src\Objects\Components\Component.h(111): warning C4715: CComponent::GetAddParentComponent<CComponentTransform,CObject,CBaseEntity>: значение возвращается не при всех путях выполнения
-C:\Users\kii2\Documents\OpenGL\OpenGL\OpenGL_Lesson3\src\Objects\Components\Component.h(111): warning C4715: CComponent::GetAddParentComponent<CComponentTransform,CComponent,CBaseEntity>: значение возвращается не при всех путях выполнения
-C:\Users\kii2\Documents\OpenGL\OpenGL\OpenGL_Lesson3\src\Objects\Components\Component.h(111): warning C4715: CComponent::GetAddParentComponent<CComponentTransform,CObject,CBaseEntity>: значение возвращается не при всех путях выполнения
-C:\Users\kii2\Documents\OpenGL\OpenGL\OpenGL_Lesson3\src\Objects\Components\Component.h(111): warning C4715: CComponent::GetAddParentComponent<CComponentTransform,CComponent,CBaseEntity>: значение возвращается не при всех путях выполнения
-C:\Users\kii2\Documents\OpenGL\OpenGL\OpenGL_Lesson3\src\Handlers\CameraHandler.h(52): warning C4715: CCameraHandler::IsCameraExist: значение возвращается не при всех путях выполнения
-C:\Users\kii2\Documents\OpenGL\OpenGL\OpenGL_Lesson3\src\Handlers\CameraHandler.h(52): warning C4715: CCameraHandler::IsCameraExist: значение возвращается не при всех путях выполнения
-  LINK : не найден или не выполнена сборка C:\Users\kii2\Documents\OpenGL\OpenGL\x64\Debug\OpenGL_Lesson3.exe при последней инкрементной компоновке; выполняется полная компоновка
-  OpenGL_Lesson3.vcxproj -> C:\Users\kii2\Documents\OpenGL\OpenGL\x64\Debug\OpenGL_Lesson3.exe
+C:\Users\SAYONARA\Documents\OpenGL\OpenGL_Lessons\OpenGL_Lesson3\src\Handlers\CameraHandler.h(61): warning C4715: CCameraHandler::IsCameraExist: значение возвращается не при всех путях выполнения
+C:\Users\SAYONARA\Documents\OpenGL\OpenGL_Lessons\OpenGL_Lesson3\src\Handlers\CameraHandler.h(61): warning C4715: CCameraHandler::IsCameraExist: значение возвращается не при всех путях выполнения
+  OpenGL_Lesson3.vcxproj -> C:\Users\SAYONARA\Documents\OpenGL\OpenGL_Lessons\x64\Debug\OpenGL_Lesson3.exe

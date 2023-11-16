@@ -82,7 +82,6 @@ public:
     {
         CComponent::Update();
 
-        m_CurTriangles = m_Triangles;
         std::shared_ptr<CComponentTransform> transform;
 
         if( !transform )
@@ -91,9 +90,11 @@ public:
         if( !transform )
             transform = GetAddParentComponent<CComponentTransform, CComponent>( m_Parent );
 
-        if( transform ) {
-            for( CTriangle3D<T>& triangle : m_CurTriangles )
-                triangle.RotMovScale( transform->m_Rot, transform->m_Position, transform->m_Scale );
+        if( transform && transform->WasUpdated() ) {
+            m_CurTriangles.clear();
+            for( CTriangle3D<T> triangle : m_Triangles ) {
+                m_CurTriangles.push_back( triangle.RotMovScaled( transform->m_Rot, transform->m_Position, transform->m_Scale ) );
+            }
         }
     };
 

@@ -28,7 +28,13 @@ public:
         m_Scenes[m_currentScene]->Update();
     };
 
-    
+    void PostUpdate()
+    {
+        if( m_Scenes.size() == 0 || m_Scenes.size() == m_currentScene )
+            return;
+
+        m_Scenes[m_currentScene]->PostUpdate();
+    }
 
     void Draw()
     {

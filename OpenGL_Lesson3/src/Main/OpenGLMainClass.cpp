@@ -1,5 +1,6 @@
 #include "OpenGLMainClass.h"
 #include "iostream"
+#include "../Objects/Lights/BaseLight.h"
 #include "../Objects/Components/ComponentLight.h"
 #include <memory>
 
@@ -72,16 +73,22 @@ void COpenGLMainClass::Start()
 {
     glutMainLoop();
 }
-
+std::shared_ptr<CBaseLight> light = std::make_shared<CBaseLight>();
 void COpenGLMainClass::Update()
 {
     //if( !m_TimeManager.IsTimerEnded() )
     //    return;
 
+    std::shared_ptr<CComponentTransform> transform = light->GetComponent<CComponentLight>()->GetComponent<CComponentTransform>();
+    transform->m_Rot += CVector<float>{ 1, 0, 0 };
+    transform->a();
+
     m_SceneHandler.PreUpdate();
     m_CameraHandler.PreUpdate();
     m_SceneHandler.Update();
     m_CameraHandler.Update();
+    m_SceneHandler.PostUpdate();
+    m_CameraHandler.PostUpdate();
     glutPostRedisplay();
     //m_TimeManager.StartTimer( 1000.0 / m_FramesLimit );
 }
@@ -96,6 +103,11 @@ void COpenGLMainClass::CreateScene()
     scene1->AddObject( std::make_shared<CCube>( 200 ), CVector<float>{ 0, -600, 0 }, CVector<float>{ 0, 0, 0 } );
     scene1->AddObject( std::make_shared<CCube>( 200 ), CVector<float>{ 0, 0, +600 }, CVector<float>{ 0, 0, 0 } );
     scene1->AddObject( std::make_shared<CCube>( 200 ), CVector<float>{ 0, 0, -600 }, CVector<float>{ 0, 0, 0 } );
+
+    
+
+    scene1->AddObject( light, CVector<float>{ +600, 0, 0 }, CVector<float>{ 0, 0, 0 } );
+    light->GetAddComponent<CComponentLight>( *light.get() )->SetLightPositionObject( std::make_shared<CCube>( 50 ) );
 
     //scene1->GetObjectByID( 0 )->AddComponent( std::make_shared<CComponentMesh3D<float>>( *(scene1->GetObjectByID( 0 ).get()) ) );
     //scene1->GetObjectByID( 0 )->GetComponent<CComponentLight>()->SetLightPositionObject( std::make_shared<CCube>( 50 ) );

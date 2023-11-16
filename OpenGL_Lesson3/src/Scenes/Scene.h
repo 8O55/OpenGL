@@ -14,6 +14,7 @@ public:
 
     virtual void PreUpdate();
     virtual void Update();
+    virtual void PostUpdate();
     virtual void Draw();
 
     size_t ID() const { return m_ID; };

@@ -29,6 +29,15 @@ public:
             camera->Update();
     };
 
+    void PostUpdate()
+    {
+        if( m_Cameras.size() == 0 )
+            return;
+
+        for( auto& camera : m_Cameras )
+            camera->PostUpdate();
+    };
+
     void Draw()
     {
         if( m_Cameras.size() == 0 )

@@ -49,7 +49,6 @@ public:
 
     CMatrix<T> operator+ ( T number        );   //!< Сложение с числом
     CMatrix<T> operator+ ( CMatrix<T> mat2 );   //!< Сложение с матрицей
-    CMatrix<T> operator- ();                    //!< Инвертирование
     CMatrix<T> operator- ( T number        );   //!< Вычитание числа
     CMatrix<T> operator- ( CMatrix<T> mat2 );   //!< Вычитание матрицы
     CMatrix<T> operator* ( T number        );   //!< Масштабирование
@@ -539,6 +538,12 @@ inline CMatrix<T> CMatrix<T>::GetRotMatrix( CVector<T> rot )
     float s3 = sin( rot[2] );
     float c3 = cos( rot[2] );
 
+    CMatrix<T> result{ { c2 * c3,   c3 * s1 * s2 - c1 * s3,   c1 * c3 * s2 + s1 * s3 },
+                       { c2 * s3,   c1 * c3 + s1 * s2 * s3,  -c3 * s1 + c1 * s2 * s3 },
+                       { -s2,       c2 * s1,                  c1 * c2                } };
+
+    return result;
+
     /*
     CMatrix<T> rotX{ { 1,              0,               0 },
                      { 0, cosf( rot[0] ), -sinf( rot[0] ) },
@@ -552,8 +557,9 @@ inline CMatrix<T> CMatrix<T>::GetRotMatrix( CVector<T> rot )
                      { sinf( rot[2] ),  cosf( rot[2] ), 0 },
                      {              0,               0, 1 } };
 
-    */
+    
     return rotZ * rotY * rotX;
+    */
 }
 
 #endif // CMATRIX_H

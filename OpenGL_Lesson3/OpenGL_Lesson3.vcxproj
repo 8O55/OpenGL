@@ -145,7 +145,9 @@
     <ClCompile Include="src\Handlers\SceneHandler.cpp" />
     <ClCompile Include="src\Main\OpenGLMainClass.cpp" />
     <ClCompile Include="src\Objects\Components\ComponentCameraMouse .cpp" />
+    <ClCompile Include="src\Objects\Components\ComponentTransform.cpp" />
     <ClCompile Include="src\Objects\Geometric\CCube.cpp" />
+    <ClCompile Include="src\Objects\Lights\BaseLight.cpp" />
     <ClCompile Include="src\Scenes\Scene.cpp" />
     <ClCompile Include="src\Utility\TimeManager.cpp" />
   </ItemGroup>
@@ -168,6 +170,7 @@
     <ClInclude Include="src\Objects\Components\ComponentSpotlight.h" />
     <ClInclude Include="src\Objects\Components\ComponentTransform.h" />
     <ClInclude Include="src\Objects\Geometric\CCube.h" />
+    <ClInclude Include="src\Objects\Lights\BaseLight.h" />
     <ClInclude Include="src\Objects\Object.h" />
     <ClInclude Include="src\Scenes\Scene.h" />
     <ClInclude Include="src\Utility\Math\Matrix.h" />

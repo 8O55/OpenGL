@@ -14,25 +14,60 @@ class CComponentLight : public CComponent
 {
 public:
     bool m_ShowLightPosition;
-    CPoint3D<float> m_LightPos;
 public:
     std::shared_ptr<CObject> m_LightPositionObject;
 
     CComponentLight( CBaseEntity& parent )
         : CComponent{ parent }
-        , m_ShowLightPosition{ false }
-        , m_LightPos{ 0, 0, 0 }
+        , m_ShowLightPosition{ true }
     {
-        CComponent::AddComponent( std::make_shared<CComponentTransform>( *this ) );
+        InitComponents();
     };
+
+    virtual void InitComponents() override
+    {
+        AddAloneComponent<CComponentTransform>( *this );
+        if( m_LightPositionObject )
+            m_LightPositionObject->ReplaceComponent( GetComponent<CComponentTransform>() );
+        GetComponent<CComponentTransform>()->MakeUpdated();
+    }
+
+    virtual void PreUpdate()
+    {
+        std::shared_ptr<CComponentTransform> transform;
+
+        if( !transform )
+            transform = GetParentComponent<CComponentTransform, CObject>();
+
+        if( !transform )
+            transform = GetParentComponent<CComponentTransform, CComponent>();
+
+        if( transform ) {
+            GetComponent<CComponentTransform>()->m_Rot += transform->m_Rot;
+            GetComponent<CComponentTransform>()->m_Position += transform->m_Position - transform->m_PrevPosition;
+        }
+        CComponent::PreUpdate();
+    }
 
     // Унаследовано через CComponent
     virtual void Update() override
     {
         CComponent::Update();
 
+        std::shared_ptr<CComponentTransform> transform;
+
+        if( !transform )
+            transform = GetAddParentComponent<CComponentTransform, CObject>( m_Parent );
+
+        if( !transform )
+            transform = GetAddParentComponent<CComponentTransform, CComponent>( m_Parent );
+
+        
+
         if( m_ShowLightPosition && m_LightPositionObject )
             m_LightPositionObject->Update();
+
+        
 
         /*
         for( auto component : m_ParentObject.m_Components )
@@ -73,8 +108,12 @@ public:
     void SetLightPositionObject( std::shared_ptr<CObject> object )
     {
         m_LightPositionObject = object;
+        if( m_LightPositionObject )
+            m_LightPositionObject->ReplaceComponent<CComponentTransform>( GetComponent<CComponentTransform>() );
+        GetComponent<CComponentTransform>()->MakeUpdated();
     }
 
     bool IsLightPositionShown() const { return m_ShowLightPosition; }
+    std::shared_ptr<CObject> LightPositionObject() { return m_LightPositionObject; }
 };
 

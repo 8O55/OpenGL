@@ -5,11 +5,14 @@
 
 CCube::CCube( float a ) : CObject(), m_A{ a }
 {
-    AddComponent( std::make_shared<CComponentMesh3D<float>>( *this ) );
-    GetComponent<CComponentMesh3D<float>>()->Update();
-    AddComponent( std::make_shared<CComponentLight>( CComponentLight{ *this } ) );
-
+    InitComponents();
     MakeMesh();
+}
+
+void CCube::InitComponents()
+{
+    AddAloneComponent<CComponentTransform>( *this );
+    AddAloneComponent<CComponentMesh3D<float>>( *this );
 }
 
 void CCube::MakeMesh()
@@ -46,5 +49,10 @@ void CCube::MakeMesh()
 
     for( const auto& triangle : triangles )
         mesh->AddTriangle( triangle );
+
+    GetComponent<CComponentTransform>()->MakeUpdated();
+    //GetComponent<CComponentMesh3D<float>>()->Update();
 }
+
+
 

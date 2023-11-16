@@ -22,19 +22,11 @@ public:
         InitComponents();
     }
 
-    CCameraObject( std::initializer_list<std::shared_ptr<CComponent>> components )
-        : CObject( components )
-        , m_Fov{ 30 }
-        , m_ID{ ++m_CurrentCameraID }
-    {
-        InitComponents();
-    }
+    CCameraObject( const CCameraObject& ) = delete;
+    CCameraObject( CCameraObject&& ) = delete;
 
-    CCameraObject( const CCameraObject& ) = default;
-    CCameraObject( CCameraObject&& ) = default;
-
-    CCameraObject& operator=( const CCameraObject& ) = default;
-    CCameraObject& operator=( CCameraObject&& ) = default;
+    CCameraObject& operator=( const CCameraObject& ) = delete;
+    CCameraObject& operator=( CCameraObject&& ) = delete;
 
     virtual void InitComponents() override
     {
