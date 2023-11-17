@@ -82,13 +82,7 @@ public:
     {
         CComponent::Update();
 
-        std::shared_ptr<CComponentTransform> transform;
-
-        if( !transform )
-            transform = GetAddParentComponent<CComponentTransform, CObject>( m_Parent );
-        
-        if( !transform )
-            transform = GetAddParentComponent<CComponentTransform, CComponent>( m_Parent );
+        std::shared_ptr<CComponentTransform> transform = GetAddParentComponent<CComponentTransform, CComponent, CObject>( m_Parent );
 
         if( transform && transform->WasUpdated() ) {
             m_CurTriangles.clear();

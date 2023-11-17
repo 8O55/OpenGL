@@ -50,26 +50,50 @@ public:
     };
 
     // !< Попытаться преобразовать и получить объект родителя указанного типа
-    template<typename type>
-    type* GetParent()
+    template<typename _parentType>
+    _parentType* GetParent()
     {
-        return dynamic_cast< type* >( &m_Parent );
-    }
-
-    template<typename componentType, typename parentType, class... _Types>
-    std::shared_ptr<componentType> GetAddParentComponent( _Types&... _Args)
-    {
-        if( GetParent<parentType>() )
-            return GetParent<parentType>()->GetAddComponent<componentType>( _Args... );
+        if( dynamic_cast< _parentType* >( &m_Parent ) )
+            return dynamic_cast< _parentType* >( &m_Parent );
         return nullptr;
     }
 
-    template<typename componentType, typename parentType>
-    std::shared_ptr<componentType> GetParentComponent( )
+    template<typename componentType, class... _Types>
+    std::shared_ptr<componentType> GetAddParentComponent( _Types&... _Args )
     {
-        if( GetParent<parentType>() )
-            return GetParent<parentType>()->GetComponent<componentType>();
         return nullptr;
+    }
+
+    template<typename componentType, typename _parentType, typename... _parentTypes, class... _Types>
+    std::shared_ptr<componentType> GetAddParentComponent( _Types&... _Args )
+    {
+        if( GetParent<_parentType>() )
+            return GetParent<_parentType>()->GetAddComponent<componentType>( _Args... );
+        else
+            return GetAddParentComponent<componentType, _parentTypes...>( _Args... );
+        return nullptr;
+    }
+
+    template<typename componentType>
+    std::shared_ptr<componentType> GetParentComponent()
+    {
+        return nullptr;
+    }
+
+    template<typename componentType, typename _parentType, typename... _parentTypes>
+    std::shared_ptr<componentType> GetParentComponent()
+    {
+        if( GetParent<_parentType>() )
+            return GetParent<_parentType>()->GetComponent<componentType>();
+        else
+            return GetParentComponent<componentType, _parentTypes...>();
+        return nullptr;
+    }
+
+    template<typename componentType, typename... _ParentsTypes> 
+    std::shared_ptr<componentType> GetComponentThrowParents( bool isFirstCall = true )
+    {
+        
     }
 
     bool WasUpdated() const { return m_WasUpdated; }
