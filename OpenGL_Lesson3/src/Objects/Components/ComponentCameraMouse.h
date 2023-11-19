@@ -21,6 +21,8 @@ public:
 
     CComponentCameraMouse( CBaseEntity& parent )
         : CComponentMouse{ parent }
+        , m_CurrX{ 0 }
+        , m_CurrY{ 0 }
         , m_PrevX{ 0 }
         , m_PrevY{ 0 }
         , m_ActiveKeysMsk{ 0 }

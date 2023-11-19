@@ -14,8 +14,8 @@ protected:
 public:
     CMatrix( std::initializer_list<CVector<T>> lst );
     CMatrix( std::initializer_list<std::initializer_list<T>> lst );
-    CMatrix( const CMatrix<T>&  );
-    CMatrix( CMatrix<T>&& );
+    CMatrix( const CMatrix<T>& );
+    CMatrix( CMatrix<T>&& ) noexcept;
     CMatrix();
 
     inline void PushRow( CVector<T> row, size_t idx );
@@ -64,7 +64,7 @@ public:
     CMatrix<T> operator/=( T number );          //!< Масштабирование
 
     CMatrix<T> operator=( const CMatrix<T>& mat2 );   //!< Оператор копирования
-    CMatrix<T> operator=( CMatrix<T>&& mat2 );  //!< Оператор перемещения
+    CMatrix<T> operator=( CMatrix<T>&& mat2 ) noexcept;  //!< Оператор перемещения
 
     static std::pair<size_t, size_t> AlignDims( CMatrix<T>& mat1, CMatrix<T>& mat2 );
 
@@ -121,7 +121,7 @@ CMatrix<T>::CMatrix( const CMatrix<T>& mat2 )
 }
 
 template<typename T>
-CMatrix<T>::CMatrix( CMatrix<T> && mat2 )
+CMatrix<T>::CMatrix( CMatrix<T> && mat2 ) noexcept
 {
     m_Matrix.Resize( mat2.Rows() );
 
@@ -482,7 +482,7 @@ CMatrix<T> CMatrix<T>::operator=( const CMatrix<T>& mat2 )
 }
 
 template<typename T>
-CMatrix<T> CMatrix<T>::operator=( CMatrix<T>&& mat2 )
+CMatrix<T> CMatrix<T>::operator= ( CMatrix<T>&& mat2 ) noexcept
 {
     Resize( mat2.Size() );
 
@@ -527,7 +527,7 @@ template<typename T>
 inline CMatrix<T> CMatrix<T>::GetRotMatrix( CVector<T> rot )
 {
 
-    rot *= M_PI / 180;
+    rot *= static_cast< float > ( M_PI / 180 );
 
     float s1 = sin( rot[0]);
     float c1 = cos( rot[0] );

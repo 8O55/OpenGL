@@ -5,7 +5,7 @@
 #include "../Math/Vector.h"
 #include "../Utils.h"
 
-template<typename T = double>
+template<typename T = float>
 class CPoint2D : public CDrawableObject
 {
 protected:
@@ -172,7 +172,7 @@ public:
     }
 };
 
-template<typename T = double>
+template<typename T = float>
 class CPoint3D : public CDrawableObject
 {
 protected:
@@ -210,6 +210,12 @@ public:
         point.m_Z = 0;
     }
 
+    CPoint3D( const CPoint3D& point, CColor color )
+        : CPoint3D( point )
+    {
+        m_Color = color;
+    }
+
     CPoint3D( CVector<T> vec )
         : CDrawableObject{}
     {
@@ -231,6 +237,9 @@ public:
         m_Y = mat[0][1];
         m_Z = mat[0][2];
     }
+
+    operator CVector<T>() const { return CVector<T>{   m_X, m_Y, m_Z   }; }
+    operator CMatrix<T>() const { return CMatrix<T>{ { m_X, m_Y, m_Z } }; }
 
     void Draw() override {};
 
@@ -269,13 +278,19 @@ public:
     inline CPoint3D<T> MovedTo( const CPoint3D<T>& point ) { return MovedTo( point.m_X, point.m_Y, point.m_Z ); }
 
 
-    inline void Scale( double scale ) { SetCords( m_X * scale, m_Y * scale, m_Z * scale ); }
+    inline CPoint3D<T> Scale( double scale ) { SetCords( m_X * scale, m_Y * scale, m_Z * scale ); return *this; }
+    inline const CPoint3D<T> Scaled( double scale ) { CPoint3D<T> point = *this; return point.scale( scale ); }
 
     inline double DistanceTo( CPoint3D<T> dst ) const { return DistanceTo( dst.m_X, dst.m_Y, dst.m_Z ); }
     inline double DistanceTo( T x, T y, T z )   const {
         return sqrt( ( m_X - x ) * ( m_X - x ) +
             ( m_Y - y ) * ( m_Y - y ) +
             ( m_Z - z ) * ( m_Z - z ) );
+    }
+
+    inline CPoint3D<T> MiddlePoint( const CPoint3D<T>& point ) const
+    {
+        return CPoint3D<T>{ static_cast< CVector<T> >( *this ) + ( static_cast< CVector<T> >( point ) - static_cast< CVector<T> >( *this ) ) / 2 };
     }
 
     CPoint3D<T> Rotate( T aX, T aY, T aZ )
@@ -375,9 +390,6 @@ public:
 
     template<typename D>
     operator CPoint3D<D>() { return CPoint3D<D>{ static_cast< D >( m_X ), static_cast< D >( m_Y ), static_cast< D >( m_Z ), m_Color, m_IsVisible }; }
-
-    operator CVector<T>() { return CVector<T>{   m_X, m_Y, m_Z   }; }
-    operator CMatrix<T>() { return CMatrix<T>{ { m_X, m_Y, m_Z } }; }
 
     CPoint3D operator= ( const CPoint3D& point )
     {

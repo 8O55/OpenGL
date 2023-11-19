@@ -4,13 +4,15 @@
 #include "../Objects/Components/ComponentLight.h"
 #include <memory>
 
-CKeyboardHandler COpenGLMainClass::m_KeyboardHandler;
-CMouseHandler    COpenGLMainClass::m_MouseHandler;
-CDisplayHandler  COpenGLMainClass::m_DisplayHandler;
-CTimeManager     COpenGLMainClass::m_TimeManager;
-CSceneHandler    COpenGLMainClass::m_SceneHandler;
-CCameraHandler   COpenGLMainClass::m_CameraHandler;
-int              COpenGLMainClass::m_FramesLimit = 60;
+CKeyboardHandler        COpenGLMainClass::m_KeyboardHandler;
+CMouseHandler           COpenGLMainClass::m_MouseHandler;
+CDisplayHandler         COpenGLMainClass::m_DisplayHandler;
+CTimeManager            COpenGLMainClass::m_TimeManager;
+CSceneHandler           COpenGLMainClass::m_SceneHandler;
+CCameraHandler          COpenGLMainClass::m_CameraHandler;
+int                     COpenGLMainClass::m_FramesLimit = 60;
+unsigned int            COpenGLMainClass::m_BiggestListNumber = 0;
+std::list<unsigned int> COpenGLMainClass::m_FreeListNumbers;
 
 static void keyDispathcer( unsigned char key, int x, int y )
 {
@@ -51,7 +53,8 @@ static void updateFunc( int )
 COpenGLMainClass::COpenGLMainClass( int* argc, char** argv )
 {
     glutInit( argc, argv );
-    m_DisplayHandler.InitDisplay( GLUT_SINGLE | GLUT_RGB | GLUT_DEPTH );
+    m_DisplayHandler.InitDisplay( GLUT_SINGLE | GLUT_RGB | GLUT_DEPTH | GLUT_MULTISAMPLE );
+    glutSetOption( GLUT_MULTISAMPLE, 8 );
     m_DisplayHandler.InitWindow( "Lesson 3", 500, 500, 500, 500 );
     SetFuncs();
     m_DisplayHandler.SetProjection( CDisplayHandler::ptPerspective );
@@ -79,9 +82,9 @@ void COpenGLMainClass::Update()
     //if( !m_TimeManager.IsTimerEnded() )
     //    return;
 
-    std::shared_ptr<CComponentTransform> transform = light->GetComponent<CComponentLight>()->GetComponent<CComponentTransform>();
-    transform->m_Rot += CVector<float>{ 1, 0, 0 };
-    transform->a();
+    //std::shared_ptr<CComponentTransform> transform = light->GetComponent<CComponentLight>()->GetComponent<CComponentTransform>();
+    //transform->m_Rot += CVector<float>{ 1, 0, 0 };
+    //transform->a();
 
     m_SceneHandler.PreUpdate();
     m_CameraHandler.PreUpdate();

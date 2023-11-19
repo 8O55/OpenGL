@@ -101,6 +101,7 @@ public:
     CVector<T> operator- ( CVector<T> vec2 );   //!< Вычитание вектора
     CVector<T> operator* ( T number        );   //!< Масштабирование
     CVector<T> operator* ( CVector<T> vec2 );   //!< Векторное произведение
+    CVector<T> operator/ ( T number );          //!< Деление вектора на число
 
     CVector<T> operator+=( T number );          //!< Сложение с числом
     CVector<T> operator+=( CVector<T> vec2 );   //!< Сложение с вектором
@@ -108,9 +109,10 @@ public:
     CVector<T> operator-=( CVector<T> vec2 );   //!< Вычитание вектора
     CVector<T> operator*=( T number );          //!< Масштабирование
     CVector<T> operator*=( CVector<T> vec2 );   //!< Векторное произведение
+    CVector<T> operator/=( T number );          //!< Деление вектора на число
 
     CVector<T> operator=( const CVector<T>& vec2 );  //!< Оператор копирования
-    CVector<T> operator=( CVector<T>&& vec2 );       //!< Оператор перемещения
+    CVector<T> operator=( CVector<T>&& vec2 ) noexcept;       //!< Оператор перемещения
 
     bool operator==( const CVector<T>& vec2 );
 
@@ -344,7 +346,7 @@ template<typename T>
 CVector<T> CVector<T>::operator+=( CVector<T> vec2 )
 {
     CVector<T> vec1{ *this };
-    size_t newSize = std::fmax( vec1.Size(), vec2.Size() );
+    size_t newSize = std::max( vec1.Size(), vec2.Size() );
 
     vec1.Resize( newSize );
     vec2.Resize( newSize );
@@ -395,6 +397,19 @@ CVector<T> CVector<T>::operator*=( T number )
     vec1.Scale( number );
 
     *this = vec1;
+
+    return *this;
+}
+
+template<typename T>
+CVector<T> CVector<T>::operator/=( T number )
+{
+    CVector<T> vec1{ *this };
+
+    for( auto& elem : m_Vector )
+        elem /= number;
+
+    //*this = vec1;
 
     return *this;
 }
@@ -479,6 +494,14 @@ CVector<T> CVector<T>::operator*( T number )
     return vec1 *= number;
 }
 
+template<typename T>
+CVector<T> CVector<T>::operator/( T number )
+{
+    CVector<T> vec1{ *this };
+
+    return vec1 /= number;
+}
+
 // Пока что работает только для трехмерного пространства
 template<typename T>
 CVector<T> CVector<T>::operator*( CVector<T> vec2 )
@@ -499,7 +522,7 @@ CVector<T> CVector<T>::operator=( const CVector<T>& vec2 )
 }
 
 template<typename T>
-CVector<T> CVector<T>::operator=( CVector<T>&& vec2 )
+CVector<T> CVector<T>::operator=( CVector<T>&& vec2 ) noexcept
 {
     Resize( vec2.Size() );
     for( size_t i = 0; i < vec2.Size(); ++i )

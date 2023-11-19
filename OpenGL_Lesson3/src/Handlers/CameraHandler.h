@@ -58,6 +58,7 @@ public:
         for( size_t i = 0; i < m_Cameras.size(); ++i )
             if( m_Cameras[i]->m_ID == cameraId )
                 return true;
+        return false;
     }
 
     void AddCamera( std::shared_ptr<CCameraObject> scene )

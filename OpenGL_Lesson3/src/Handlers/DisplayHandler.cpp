@@ -7,6 +7,8 @@
 #define ENABLE_LINE_SMOOT       1
 #define ENABLE_DEPTH_TEST       1
 #define ENABLE_BLENT            1
+#define ENABLE_POLYGON_OFFSET   1
+#define ENABLE_CULL_FACE        1
 
 CDisplayHandler::CDisplayHandler()
     : m_ProjectType{ ptOrtho }
@@ -45,6 +47,18 @@ void CDisplayHandler::InitWindow( const char* name, int sizeX, int sizeY, int po
     EnablePolygonSmooth();
 #else
     DisablePolygonSmooth();
+#endif
+
+#if ENABLE_POLYGON_OFFSET
+    EnablePolygonOffset();
+#else
+    DisablePolygonOffset();
+#endif
+
+#if ENABLE_CULL_FACE
+    EnableCullFace();
+#else
+    DisableCullFace();
 #endif
 
     glClearColor( 1.0, 1.0, 1.0, 0.0 );
@@ -191,6 +205,53 @@ void CDisplayHandler::DisableDepthTest( bool state )
 {
     EnableDepthTest( !state );
 }
+
+bool CDisplayHandler::IsPolygonOffsetEnabled() const
+{
+    GLboolean isEnabled;
+    glGetBooleanv( GL_POLYGON_OFFSET_LINE, &isEnabled );
+    return static_cast< bool >( isEnabled );
+}
+
+void CDisplayHandler::EnablePolygonOffset( bool state )
+{
+    if( state == IsPolygonOffsetEnabled() )
+        return;
+
+    if( state )
+        glEnable( GL_POLYGON_OFFSET_LINE );
+    else
+        glDisable( GL_POLYGON_OFFSET_LINE );
+}
+
+void CDisplayHandler::DisablePolygonOffset( bool state )
+{
+    EnablePolygonOffset( !state );
+}
+
+bool CDisplayHandler::IsCullFaceEnabled() const
+{
+    GLboolean isEnabled;
+    glGetBooleanv( GL_CULL_FACE, &isEnabled );
+    return static_cast< bool >( isEnabled );
+}
+
+void CDisplayHandler::EnableCullFace( bool state )
+{
+    if( state == IsCullFaceEnabled() )
+        return;
+
+    if( state )
+        glEnable( GL_CULL_FACE );
+    else
+        glDisable( GL_CULL_FACE );
+}
+
+void CDisplayHandler::DisableCullFace( bool state )
+{
+    EnablePolygonOffset( !state );
+}
+
 
 void CDisplayHandler::SetProjection( ProjectTypes pt )
 {

@@ -60,9 +60,9 @@ public:
         if( m_Rot[1] < 0 ) m_Rot[1] = 360 + m_Rot[1];
         if( m_Rot[2] < 0 ) m_Rot[2] = 360 + m_Rot[2];
 
-        m_Rot[0] = fmod( m_Rot[0], 360 );
-        m_Rot[1] = fmod( m_Rot[1], 360 );
-        m_Rot[2] = fmod( m_Rot[2], 360 );
+        m_Rot[0] = static_cast< float > ( fmod( static_cast< double >( m_Rot[0] ), 360 ) );
+        m_Rot[1] = static_cast< float > ( fmod( static_cast< double >( m_Rot[1] ), 360 ) );
+        m_Rot[2] = static_cast< float > ( fmod( static_cast< double >( m_Rot[2] ), 360 ) );
 
         CMatrix<float> newMove  = CMatrix<float>{ m_Move }.Transposed();
         CMatrix<float> newDir   = CMatrix<float>{ CVector<float>{ 0, 0, -1 } }.Transposed();

@@ -41,6 +41,13 @@ public:
     void EnableDepthTest( bool state = true );
     void DisableDepthTest( bool state = true );
 
+    bool IsPolygonOffsetEnabled() const;
+    void EnablePolygonOffset( bool state = true );
+    void DisablePolygonOffset( bool state = true );
+
+    bool IsCullFaceEnabled() const;
+    void EnableCullFace( bool state = true );
+    void DisableCullFace( bool state = true );
 
     void SetProjection( ProjectTypes pt );
 

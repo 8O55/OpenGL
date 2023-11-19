@@ -17,38 +17,40 @@ void CCube::InitComponents()
 
 void CCube::MakeMesh()
 {
-    std::shared_ptr<CComponentMesh3D<float>> mesh;
+    std::shared_ptr<CComponentMesh3D<float>> mesh = GetComponent<CComponentMesh3D<float>>();
 
-    for( auto ptr : m_Components )
-        if( std::dynamic_pointer_cast<CComponentMesh3D<float>>( ptr ) ) {
-            mesh = std::dynamic_pointer_cast< CComponentMesh3D<float> >( ptr );
-            break;
-        }
     if( !mesh )
         return;
 
     std::vector<CTriangle3D<float>> triangles = {   // FRONT
-                                                    CTriangle3D<float>{ { +m_A, +m_A, +m_A }, { -m_A, +m_A, +m_A }, { -m_A, -m_A, +m_A } },
-                                                    CTriangle3D<float>{ { -m_A, -m_A, +m_A }, { +m_A, -m_A, +m_A }, { +m_A, +m_A, +m_A } },
+                                                    CTriangle3D<float>{ { { +m_A, +m_A, +m_A }, { -m_A, +m_A, +m_A }, { -m_A, -m_A, +m_A } }, CColor{ CColor::cRED } },
+                                                    CTriangle3D<float>{ { { -m_A, -m_A, +m_A }, { +m_A, -m_A, +m_A }, { +m_A, +m_A, +m_A } }, CColor{ CColor::cRED } },
                                                     // RIGHT
-                                                    CTriangle3D<float>{ { +m_A, +m_A, -m_A }, { +m_A, +m_A, +m_A }, { +m_A, -m_A, +m_A } },
-                                                    CTriangle3D<float>{ { +m_A, -m_A, +m_A }, { +m_A, -m_A, -m_A }, { +m_A, +m_A, -m_A } },
+                                                    CTriangle3D<float>{ { { +m_A, +m_A, -m_A }, { +m_A, +m_A, +m_A }, { +m_A, -m_A, +m_A } }, CColor{ CColor::cRED } },
+                                                    CTriangle3D<float>{ { { +m_A, -m_A, +m_A }, { +m_A, -m_A, -m_A }, { +m_A, +m_A, -m_A } }, CColor{ CColor::cRED } },
                                                     // TOP
-                                                    CTriangle3D<float>{ { +m_A, +m_A, -m_A }, { -m_A, +m_A, -m_A }, { -m_A, +m_A, +m_A } },
-                                                    CTriangle3D<float>{ { -m_A, +m_A, +m_A }, { +m_A, +m_A, +m_A }, { +m_A, +m_A, -m_A } },
+                                                    CTriangle3D<float>{ { { +m_A, +m_A, -m_A }, { -m_A, +m_A, -m_A }, { -m_A, +m_A, +m_A } }, CColor{ CColor::cRED } },
+                                                    CTriangle3D<float>{ { { -m_A, +m_A, +m_A }, { +m_A, +m_A, +m_A }, { +m_A, +m_A, -m_A } }, CColor{ CColor::cRED } },
                                                     // BACK
-                                                    CTriangle3D<float>{ { -m_A, +m_A, -m_A }, { +m_A, +m_A, -m_A }, { +m_A, -m_A, -m_A } },
-                                                    CTriangle3D<float>{ { +m_A, -m_A, -m_A }, { -m_A, -m_A, -m_A }, { -m_A, +m_A, -m_A } },
+                                                    CTriangle3D<float>{ { { -m_A, +m_A, -m_A }, { +m_A, +m_A, -m_A }, { +m_A, -m_A, -m_A } }, CColor{ CColor::cRED } },
+                                                    CTriangle3D<float>{ { { +m_A, -m_A, -m_A }, { -m_A, -m_A, -m_A }, { -m_A, +m_A, -m_A } }, CColor{ CColor::cRED } },
                                                     // LEFT
-                                                    CTriangle3D<float>{ { -m_A, +m_A, +m_A }, { -m_A, +m_A, -m_A }, { -m_A, -m_A, -m_A } },
-                                                    CTriangle3D<float>{ { -m_A, -m_A, -m_A }, { -m_A, -m_A, +m_A }, { -m_A, +m_A, +m_A } },
+                                                    CTriangle3D<float>{ { { -m_A, +m_A, +m_A }, { -m_A, +m_A, -m_A }, { -m_A, -m_A, -m_A } }, CColor{ CColor::cRED } },
+                                                    CTriangle3D<float>{ { { -m_A, -m_A, -m_A }, { -m_A, -m_A, +m_A }, { -m_A, +m_A, +m_A } }, CColor{ CColor::cRED } },
                                                     // BOTTOM
-                                                    CTriangle3D<float>{ { +m_A, -m_A, -m_A }, { +m_A, -m_A, +m_A }, { -m_A, -m_A, +m_A } },
-                                                    CTriangle3D<float>{ { -m_A, -m_A, +m_A }, { -m_A, -m_A, -m_A }, { +m_A, -m_A, -m_A } },
+                                                    CTriangle3D<float>{ { { +m_A, -m_A, -m_A }, { +m_A, -m_A, +m_A }, { -m_A, -m_A, +m_A } }, CColor{ CColor::cRED } },
+                                                    CTriangle3D<float>{ { { -m_A, -m_A, +m_A }, { -m_A, -m_A, -m_A }, { +m_A, -m_A, -m_A } }, CColor{ CColor::cRED } },
                                                 };
 
     for( const auto& triangle : triangles )
         mesh->AddTriangle( triangle );
+
+    mesh->SetMeshType( CComponentMesh3D<float>::MeshType::mtSolid | CComponentMesh3D<float>::MeshType::mtWired );
+    mesh->SetLineWidth( 2.0f );
+    mesh->Subdivide();
+    mesh->Subdivide();
+
+
 
     GetComponent<CComponentTransform>()->MakeUpdated();
     //GetComponent<CComponentMesh3D<float>>()->Update();

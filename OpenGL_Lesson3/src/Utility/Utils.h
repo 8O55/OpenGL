@@ -40,7 +40,7 @@ public:
             , B{ rgb.B }
         {}
 
-        CRGB( CRGB&& rgb )
+        CRGB( CRGB&& rgb ) noexcept
             : R{ rgb.R }
             , G{ rgb.G }
             , B{ rgb.B }
@@ -58,7 +58,7 @@ public:
 
             return *this;
         }
-        CRGB operator = ( CRGB&& rgb )
+        CRGB operator = ( CRGB&& rgb ) noexcept
         {
             R = rgb.R;
             G = rgb.G;
@@ -121,7 +121,7 @@ public:
             , V{ hsv.V }
         {}
 
-        CHSV( CHSV&& hsv )
+        CHSV( CHSV&& hsv ) noexcept
             : H{ hsv.H }
             , S{ hsv.S }
             , V{ hsv.V }
@@ -139,7 +139,7 @@ public:
 
             return *this;
         }
-        CHSV operator = ( CHSV&& hsv )
+        CHSV operator = ( CHSV&& hsv ) noexcept
         {
             H = hsv.H;
             S = hsv.S;
@@ -236,7 +236,7 @@ public:
         : m_RGB{ color.m_RGB }
     {}
 
-    CColor( CColor&& color )
+    CColor( CColor&& color ) noexcept
         : m_RGB{ color.m_RGB }
     {
         color.m_RGB = CRGB{ 0, 0, 0 };
@@ -260,13 +260,25 @@ public:
 
         return *this;
     }
-    CColor operator= ( CColor&& color )
+    CColor operator= ( CColor&& color ) noexcept
     {
         m_RGB = color.m_RGB;
 
         color.m_RGB = CRGB{ 0, 0, 0 };
 
         return *this;
+    }
+
+    CColor Middle( CColor color ) const
+    {
+        return CColor{ CRGB{ static_cast< unsigned char >( ( static_cast< int >( m_RGB.R ) + color.m_RGB.R ) / 2 ),
+                             static_cast< unsigned char >( ( static_cast< int >( m_RGB.G ) + color.m_RGB.G ) / 2 ),
+                             static_cast< unsigned char >( ( static_cast< int >( m_RGB.B ) + color.m_RGB.B ) / 2 ) } };
+    }
+
+    static CColor Middle( CColor color1, CColor color2 )
+    {
+        return color1.Middle( color2 );
     }
 };
 
@@ -291,9 +303,9 @@ public:
         , m_Color{ obj.m_Color }
     {};
 
-    CDrawableObject( CDrawableObject&& obj )
+    CDrawableObject( CDrawableObject&& obj ) noexcept
         : m_IsVisible{ obj.m_IsVisible }
-        , m_Color{ obj.m_Color }
+        , m_Color{ obj.m_Color } 
     {
         obj.m_IsVisible = false;
         obj.m_Color = CColor{ CColor::cNONE };
@@ -312,7 +324,7 @@ public:
         m_IsVisible = obj.m_IsVisible;
         m_Color = obj.m_Color;
     }
-    void operator = ( CDrawableObject&& obj )
+    void operator = ( CDrawableObject&& obj )  noexcept
     {
         m_IsVisible = obj.m_IsVisible;
         m_Color = obj.m_Color;
